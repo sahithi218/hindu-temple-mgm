@@ -21,47 +21,47 @@ import PageHero from "@/components/Layout/PageHero";
 const events = [
   {
     id: 1,
-    title: "Ganesh Chaturthi Celebrations",
-    date: "September 6-16, 2024",
-    time: "6:00 AM - 8:00 PM",
-    location: "Main Temple Hall",
+    title: "Bhagavad Gita Gyan - Chanting Program",
+    date: "Year-round",
+    time: "Weekend (Saturday or Sunday), 1 hour/week",
+    location: "Temple Complex",
     description:
-      "Join us for the 10-day celebration of Lord Ganesha's birthday with daily pujas, cultural programs, and prasadam distribution. Special events include Ganesh Abhishekam and 108 Modak offerings.",
-    image: "/images/events/ganesh-chaturthi.jpg",
-    category: "Festival",
+      "A comprehensive chanting program focusing on authentic pronunciation and meaning of Bhagavad Gita shlokas. Taught by Dr. Chandra Shekar from Greenville, AL. Open to ages 7 and up. Includes 1-on-1 feedback and weekly live sessions. To join, text 334-245-3017 or email hindutemple.montgomery@gmail.com.",
+    image: "/images/events/bhagavad-gita.jpg",
+    category: "Spiritual",
   },
   {
     id: 2,
-    title: "Diwali Cultural Night",
-    date: "October 31, 2024",
-    time: "5:00 PM - 10:00 PM",
-    location: "Temple Auditorium",
-    description:
-      "Celebrate the festival of lights with an evening of cultural performances, traditional dances, and music. Enjoy special Lakshmi Puja followed by grand fireworks display.",
-    image: "/images/events/diwali.jpg",
-    category: "Cultural",
-  },
-  {
-    id: 3,
     title: "Temple Anniversary Celebration",
     date: "June 9, 2024",
     time: "9:00 AM - 9:00 PM",
     location: "Temple Complex",
     description:
       "Join us in celebrating our temple's fifth anniversary with special pujas, community lunch (Annadanam), cultural programs, and evening concert. All devotees are welcome.",
-    image: "/images/events/anniversary.jpg",
+    image: "/images/events/temple.jpg",
     category: "Special",
   },
   {
-    id: 4,
-    title: "Vedic Chanting Workshop",
-    date: "Every Saturday",
-    time: "8:00 AM - 10:00 AM",
-    location: "Learning Center",
+    id: 3,
+    title: "Ganesh Chaturthi Celebrations",
+    date: "September 6-16, 2024",
+    time: "6:00 AM - 8:00 PM",
+    location: "Temple Complex",
     description:
-      "Learn traditional Vedic chanting and Sanskrit verses in this weekly workshop. Open to all age groups. Prior registration required.",
-    image: "/images/events/vedic.jpg",
-    category: "Workshop",
+      "Join us for the 10-day celebration of Lord Ganesha's birthday with daily pujas, cultural programs, and prasadam distribution. Special events include Ganesh Abhishekam and 108 Modak offerings.",
+    image: "/images/events/ganesh-chaturthi.jpg",
+    category: "Festival",
+  },
+  {
+    id: 4,
+    title: "Diwali Celebrations",
+    date: "October 31, 2024",
+    time: "5:00 PM - 10:00 PM",
+    location: "Temple Complex",
+    description:
+      "Celebrate the festival of lights with an evening of cultural performances, traditional dances, and music. Enjoy special Lakshmi Puja followed by grand fireworks display.",
+    image: "/images/events/diwali.jpg",
+    category: "Cultural",
   },
 ];
 
@@ -114,14 +114,17 @@ export default function EventsPage() {
                   },
                 }}
               >
-                <CardMedia
-                  component="div"
-                  sx={{
-                    height: 240,
-                    bgcolor: "grey.100",
-                    position: "relative",
-                  }}
-                >
+                <Box sx={{ position: "relative" }}>
+                  <CardMedia
+                    component="img"
+                    image={event.image}
+                    alt={event.title}
+                    sx={{
+                      height: 240,
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
                   <Chip
                     label={event.category}
                     sx={{
@@ -133,7 +136,7 @@ export default function EventsPage() {
                       fontWeight: 500,
                     }}
                   />
-                </CardMedia>
+                </Box>
 
                 <CardContent sx={{ flexGrow: 1, p: 3 }}>
                   <Typography
