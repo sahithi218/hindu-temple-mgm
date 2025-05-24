@@ -165,10 +165,36 @@ const Footer = () => {
           </Grid>
         </Grid>
         <Divider sx={{ my: 2 }} />
-        <Typography variant="body2" color="text.secondary" align="center">
-          © {new Date().getFullYear()} Hindu Temple Montgomery. All rights
-          reserved.
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: "space-between",
+            alignItems: "center",
+            px: 1,
+          }}
+        >
+          <Typography variant="body2" color="text.secondary">
+            © {new Date().getFullYear()} Hindu Temple Montgomery. All rights
+            reserved.
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx={{ mt: { xs: 1, sm: 0 } }}
+          >
+            Developed by{" "}
+            <MuiLink
+              href="https://www.linkedin.com/in/sahithikotagiri/"
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="hover"
+              color="primary"
+            >
+              Sahithi Kotagiri
+            </MuiLink>
+          </Typography>
+        </Box>
       </Box>
     </Box>
   );
