@@ -153,7 +153,7 @@ const Footer = () => {
               Contact Info
             </Typography>
             <Typography variant="body2" color="text.secondary" paragraph>
-              2005 Meriwether Rd, Pike Rd, AL 36064
+              2005 Meriwether Rd
               <br />
               Pike Rd, AL 36064
             </Typography>
