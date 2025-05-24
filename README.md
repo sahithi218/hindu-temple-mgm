@@ -1,1 +1,1 @@
-# hindu-temple-mgm
+# hindu-temple-of-montgomery
