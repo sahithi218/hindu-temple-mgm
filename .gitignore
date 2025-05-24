@@ -1,0 +1,50 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js build output
+.next/
+out/
+
+# Static exports
+export/
+
+# Environment variables
+.env
+.env.*.local
+.env.local
+
+# Vercel deployment
+.vercel/
+
+# IDE/Editor specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# macOS system files
+.DS_Store
+
+# Optional: coverage reports (if using Jest or testing tools)
+coverage/
+
+# Optional: local database files (if any)
+*.sqlite
+*.db
+
+# Optional: npm package locks (depending on package manager)
+# Uncomment one if you're standardizing
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Optional: turbo repo cache (if using Turborepo or similar)
+turbo/
