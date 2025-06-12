@@ -4,18 +4,7 @@ import { Box, Typography } from "@mui/material";
 import DeityCard from "./DeityCard";
 
 const deities = [
-  {
-    name: "Lord Ganesha",
-    description:
-      "The remover of obstacles and patron of arts and sciences. Lord Ganesha is worshipped first before beginning any new endeavor.",
-    image: "/images/ganesha.jpg",
-  },
-  {
-    name: "Lord Venkateshwara",
-    description:
-      "A form of Lord Vishnu, known for his supreme compassion and fulfilling the wishes of his devotees. He is the lord of seven hills.",
-    image: "/images/venkateshwara.jpg",
-  },
+   
   {
     name: "Lord Hanuman",
     description:
@@ -23,23 +12,42 @@ const deities = [
     image: "/images/hanuman.jpg",
   },
   {
-    name: "Goddess Lakshmi",
+    name: "Shiva Parivar",
     description:
       "The goddess of wealth, fortune, and prosperity. She blesses devotees with both material and spiritual abundance.",
-    image: "/images/lakshmi.jpg",
+    image: "/images/shivaparivar.jpg",
   },
   {
-    name: "Lord Krishna",
+    name: "Goddess Durga",
     description:
-      "The divine embodiment of love and wisdom, known for his teachings in the Bhagavad Gita and his playful nature.",
-    image: "/images/krishna.jpg",
+      "A form of Lord Vishnu, known for his supreme compassion and fulfilling the wishes of his devotees. He is the lord of seven hills.",
+    image: "/images/Durga.jpg",
   },
   {
-    name: "Lord Shiva",
+    name: "Lord Ganesha",
+    description:
+      "The remover of obstacles and patron of arts and sciences. Lord Ganesha is worshipped first before beginning any new endeavor.",
+    image: "/images/ganesha.jpg",
+  }, 
+  {
+    name: "Lord Venkateshwara",
+    description:
+      "A form of Lord Vishnu, known for his supreme compassion and fulfilling the wishes of his devotees. He is the lord of seven hills.",
+    image: "/images/venkateshwara.jpg",
+  },
+   {
+    name: "Ram Parivar",
     description:
       "The destroyer of evil and transformer of the universe. He represents meditation, yoga, and spiritual enlightenment.",
-    image: "/images/shiva.jpg",
+    image: "/images/ram-parivar.jpg",
   },
+  {
+    name: "Radha Krishna",
+    description:
+      "The divine embodiment of love and wisdom, known for his teachings in the Bhagavad Gita and his playful nature.",
+    image: "/images/RadhaKrishna.jpg",
+  },
+ 
 ];
 
 const DeitiesSection = () => {
@@ -91,7 +99,8 @@ const DeitiesSection = () => {
             sx={{
               display: "flex",
               gap: 3,
-              overflowX: "auto",
+              overflowX: "scroll",
+              overflowY: "hidden",
               px: { xs: 2, md: 4 },
               py: 2,
               scrollBehavior: "smooth",

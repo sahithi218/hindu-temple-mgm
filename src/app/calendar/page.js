@@ -9,72 +9,74 @@ import EventIcon from "@mui/icons-material/Event";
 import PageHero from "@/components/Layout/PageHero";
 
 const festivals = [
-  { date: "January 14, Sunday", festival: "Makar Sankranti" },
-  { date: "January 25, Thursday", festival: "Shakambhari Navratri Poornima" },
-  { date: "February 13, Tuesday", festival: "Vasant Panchami" },
-  { date: "March 8, Friday", festival: "Maha Shivratri" },
-  { date: "March 24, Sunday", festival: "Holi" },
+  { date: "January 13, Monday", festival: "Shakambhari Navratri Poornima" },
+    { date: "January 14, Tuesday", festival: "Makar Sankranti" },
+  
+  { date: "February 2, Sunday", festival: "Vasant Panchami" },
+  { date: "February 25, Tuesday", festival: "Maha Shivratri" },
+  { date: "March 13, Thursday", festival: "Holi" },
   {
-    date: "March 25, Monday",
-    festival: "Penumbral Lunar Eclipse (Not to follow)",
+    date: "March 14, Friday",
+    festival: "Penumbral Lunar Eclipse"
   },
-  { date: "April 8, Monday", festival: "Partial Solar Eclipse" },
+  // { date: "April 8, Monday", festival: "Partial Solar Eclipse" },
   {
-    date: "April 9, Tuesday",
+    date: "March 29, Saturday",
     festival: "Chaitra Navratri, Gudi Padwa, Yugadi",
   },
-  { date: "April 16, Tuesday", festival: "Ram Navmi" },
-  { date: "April 23, Tuesday", festival: "Hanuman Janmotsav" },
-  { date: "June 9, Sunday", festival: "Temple Fifth Anniversary" },
-  { date: "June 21, Friday", festival: "Vat Savitri Vrat Poornima Puja" },
-  { date: "July 7, Sunday", festival: "Bhagwan Jagannath Rath Yatra" },
-  { date: "July 20, Saturday", festival: "Guru Poornima" },
+  { date: "April 5, Saturday", festival: "Ram Navmi" },
+  { date: "April 12, Saturday", festival: "Hanuman Janmotsav" },
+  { date: "June 9, Monday", festival: "Temple Sixth Anniversary" },
+  { date: "June 10, Tuesday", festival: "Vat Savitri Vrat Poornima Puja" },
+  { date: "June 26, Thursday", festival: "Bhagwan Jagannath Rath Yatra" },  
+  { date: "July 10, Thursday", festival: "Guru Poornima" },
   {
-    date: "August 5, Monday to September 2, Monday",
-    festival: "Shravan Month",
+    date: "July 25, Friday to Aug 22, Friday",
+    festival: "Shravan Month"
   },
   {
-    date: "September 2, Monday",
+    date: "August 22, Friday",
     festival: "Shravan Month Last Day, Laghu Rudra Shiva Havan",
   },
   {
-    date: "August 5, 12, 19, 26; September 2",
-    festival: "Shravan Month Mondays",
+    date: "July 28; August 4, 11, 18, 26",
+    festival: "Shravan Month Mondays"
   },
-  { date: "August 19, Monday", festival: "Rakshabandhan" },
-  { date: "August 25, Sunday", festival: "Janmashtami" },
+  { date: "August 8, Friday", festival: "Rakshabandhan" },
+  { date: "August 15, Friday", festival: "Janmashtami" },
   {
-    date: "September 6, Friday to September 16, Monday",
-    festival: "Ganesh Utsav Celibratition",
+    date: "August 26, Tuesday to September 6, Saturday",
+    festival: "Ganesh Utsav Celebration"
   },
-  { date: "September 14, Saturday", festival: "Ganesh 108 Ladoo Havan" },
-  { date: "September 17, Tuesday", festival: "Partial Lunar Eclipse" },
+  { date: "September 1, Monday", festival: "Ganesh 108 Ladoo Havan" },
+  // { date: "September 17, Tuesday", festival: "Partial Lunar Eclipse" },
   {
-    date: "September 17, Tuesday to October 2, Wednesday",
-    festival: "Sharaddha Pitru Paksha",
+    date: "September 7, Sunday to September 21, Sunday",
+    festival: "Sharaddha Pitru Paksha"
   },
-  { date: "October 3, Thursday", festival: "Ashvin (Asho) Navratri First Day" },
-  { date: "October 10, Thursday", festival: "Durga Asthami Havan" },
-  { date: "October 12, Saturday", festival: "Dashera (Ravan Dahan)" },
-  { date: "October 16, Wednesday", festival: "Sharad Poornima" },
-  { date: "October 29, Tuesday", festival: "Dhanterash" },
+  { date: "September 22, Monday", festival: "Ashvin (Asho) Navratri First Day" },
+  { date: "September 29, Monday", festival: "Durga Asthami Havan" },
+  { date: "October 1, Wednesday", festival: "Dashera (Ravan Dahan)" },
+  { date: "October 6, Monday", festival: "Sharad Poornima" },
+  { date: "October 18, Saturday", festival: "Dhanterash" },
   {
-    date: "October 30, Wednesday",
+    date: "October 19, Sunday",
     festival: "Kali Chaudash (Hanumanji Havan)",
   },
   {
-    date: "October 31, Thursday",
+    date: "October 20, Monday",
     festival: "Diwali, Saraswati Puja For Children, Fire Works",
   },
   {
-    date: "November 2, Saturday",
+    date: "October 22, Wednesday",
     festival: "Hindu Gujarati New Year, Chopda Pujan, Annakut & Govardhanpuja",
   },
   {
-    date: "November 15, Friday / November 11, Monday",
+    date: "November 1, Saturday",
     festival: "Tulsi Vivah",
   },
-  { date: "December 14, Saturday", festival: "Bhagwan Dattatreya Jayanti" },
+  { date: "December 4, Wednesday", festival: "Bhagwan Dattatreya Jayanti" },
+  { date: "December 30, Tuesday", festival: "Vaikunthi Ekadasi" },
 ];
 
 // Group festivals by month

@@ -31,8 +31,8 @@ const WelcomeSection = () => {
                   fontSize: { xs: "2.5rem", md: "3.5rem" },
                   fontWeight: 600,
                   mb: 2,
-                  background:
-                    "linear-gradient(45deg, #F48C06 30%, #E85D04 90%)",
+                  // background:
+                  //   "linear-gradient(45deg, #F48C06 30%, #E85D04 90%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
