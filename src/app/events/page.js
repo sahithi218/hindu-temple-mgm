@@ -41,28 +41,28 @@ const events = [
     image: "/images/events/temple.jpg",
     category: "Special",
   },
-  {
-    id: 3,
-    title: "Ganesh Chaturthi Celebrations",
-    date: "September 6-16, 2024",
-    time: "6:00 AM - 8:00 PM",
-    location: "Temple Complex",
-    description:
-      "Join us for the 10-day celebration of Lord Ganesha's birthday with daily pujas, cultural programs, and prasadam distribution. Special events include Ganesh Abhishekam and 108 Modak offerings.",
-    image: "/images/events/ganesh-chaturthi.jpg",
-    category: "Festival",
-  },
-  {
-    id: 4,
-    title: "Diwali Celebrations",
-    date: "October 31, 2024",
-    time: "5:00 PM - 10:00 PM",
-    location: "Temple Complex",
-    description:
-      "Celebrate the festival of lights with an evening of cultural performances, traditional dances, and music. Enjoy special Lakshmi Puja followed by grand fireworks display.",
-    image: "/images/events/diwali.jpg",
-    category: "Cultural",
-  },
+  // {
+  //   id: 3,
+  //   title: "Ganesh Chaturthi Celebrations",
+  //   date: "September 6-16, 2024",
+  //   time: "6:00 AM - 8:00 PM",
+  //   location: "Temple Complex",
+  //   description:
+  //     "Join us for the 10-day celebration of Lord Ganesha's birthday with daily pujas, cultural programs, and prasadam distribution. Special events include Ganesh Abhishekam and 108 Modak offerings.",
+  //   image: "/images/events/ganesh-chaturthi.jpg",
+  //   category: "Festival",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Diwali Celebrations",
+  //   date: "October 31, 2024",
+  //   time: "5:00 PM - 10:00 PM",
+  //   location: "Temple Complex",
+  //   description:
+  //     "Celebrate the festival of lights with an evening of cultural performances, traditional dances, and music. Enjoy special Lakshmi Puja followed by grand fireworks display.",
+  //   image: "/images/events/diwali.jpg",
+  //   category: "Cultural",
+  // },
 ];
 
 export default function EventsPage() {
@@ -200,7 +200,7 @@ export default function EventsPage() {
                     {event.description}
                   </Typography>
 
-                  <Box
+                  {/* <Box
                     sx={{
                       display: "flex",
                       justifyContent: "space-between",
@@ -219,7 +219,7 @@ export default function EventsPage() {
                     >
                       Learn More
                     </Button>
-                  </Box>
+                  </Box> */}
                 </CardContent>
               </Card>
             </Grid>
