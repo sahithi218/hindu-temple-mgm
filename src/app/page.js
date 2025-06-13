@@ -28,7 +28,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 height="200"
-                image="/images/events-placeholder.jpg"
+                image="/images/UpcomingEvents.png"
                 alt="Temple Events"
               />
               <CardContent>
@@ -51,7 +51,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 height="200"
-                image="/images/services-placeholder.jpg"
+                image="/images/services.png"
                 alt="Temple Services"
               />
               <CardContent>
@@ -73,7 +73,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 height="200"
-                image="/images/donate-placeholder.jpg"
+                image="/images/donation.jpg"
                 alt="Support the Temple"
               />
               <CardContent>
@@ -119,7 +119,9 @@ export default function Home() {
           sx={{
             mb: 6,
             fontWeight: 700,
-            background: "linear-gradient(45deg, #2B3A67 30%, #384B7E 90%)",
+            background:
+              "linear-gradient(45deg,rgb(12, 13, 14) 30%,rgb(12, 13, 14) 30%)",
+            bgcolor: "background.paper",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             textShadow: "2px 2px 4px rgba(0,0,0,0.1)",
@@ -159,13 +161,13 @@ export default function Home() {
               </Box>
               <Box sx={{ p: 3 }}>
                 {[
-                  {
-                    time: "6:30 AM",
-                    event: "Suprabhatam & Vishnu Sahasranama",
-                  },
-                  { time: "7:00 AM", event: "Morning Aarti" },
-                  { time: "8:00 AM", event: "Abhishekam" },
-                  { time: "11:30 AM", event: "Afternoon Aarti" },
+                  // {
+                  //   time: "6:30 AM",
+                  //   event: "Suprabhatam & Vishnu Sahasranama",
+                  // },
+                  // { time: "7:00 AM", event: "Morning Aarti" },
+                  { time: "9:00 AM", event: "Aarti" },
+                  // { time: "11:30 AM", event: "Afternoon Aarti" },
                 ].map((item, index) => (
                   <Box
                     key={index}
@@ -229,9 +231,9 @@ export default function Home() {
               </Box>
               <Box sx={{ p: 3 }}>
                 {[
-                  { time: "4:30 PM", event: "Evening Puja" },
-                  { time: "6:00 PM", event: "Sandhya Aarti" },
-                  { time: "7:30 PM", event: "Night Aarti" },
+                  // { time: "4:30 PM", event: "Evening Puja" },
+                  // { time: "6:00 PM", event: "Sandhya Aarti" },
+                  { time: "7:00 PM", event: "Aarti" },
                 ].map((item, index) => (
                   <Box
                     key={index}

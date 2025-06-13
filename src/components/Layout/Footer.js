@@ -117,10 +117,10 @@ const Footer = () => {
                 Daily Timings
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Morning: 6:00 AM - 12:00 PM
+                Morning: 9:00 AM - 12:00 PM
               </Typography>
               <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                Evening: 4:00 PM - 8:00 PM
+                Evening: 5:00 PM - 8:00 PM
               </Typography>
               <Typography
                 variant="subtitle1"
@@ -131,10 +131,10 @@ const Footer = () => {
                 Weekend Timings
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Morning: 6:00 AM - 1:00 PM
+                Morning: 9:00 AM - 12:00 PM
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Evening: 3:00 PM - 9:00 PM
+                Evening: 5:00 PM - 8:00 PM
               </Typography>
             </Box>
           </Grid>
@@ -160,7 +160,7 @@ const Footer = () => {
             <Typography variant="body2" color="text.secondary" paragraph>
               Phone: (334) 245-3017
               <br />
-              Email: info@hindutemplemgm.org
+              Email: hindutemple.montgomery@gmail.com
             </Typography>
           </Grid>
         </Grid>
@@ -181,18 +181,9 @@ const Footer = () => {
           <Typography
             variant="body2"
             color="text.secondary"
-            sx={{ mt: { xs: 1, sm: 0 } }}
+            sx={{ mt: { xs: 1, sm: 0 }, fontWeight: 600 }}
           >
-            Developed by{" "}
-            <MuiLink
-              href="https://www.linkedin.com/in/sahithikotagiri/"
-              target="_blank"
-              rel="noopener noreferrer"
-              underline="hover"
-              color="primary"
-            >
-              Sahithi Kotagiri
-            </MuiLink>
+            Developed by <strong>Bhakth Jan</strong>
           </Typography>
         </Box>
       </Box>

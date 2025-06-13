@@ -37,7 +37,7 @@ const WelcomeSection = () => {
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Welcome to Hindu Temple Montgomery
+                Welcome to Hindu Temple of Montgomery
               </Typography>
               <Typography
                 variant="h2"
@@ -94,6 +94,25 @@ const WelcomeSection = () => {
                     }}
                   >
                     Our Services
+                  </Button>
+                </Link>
+                <Link href="/donate" style={{ textDecoration: "none" }}>
+                  <Button
+                    variant="outlined"
+                    size="large"
+                    sx={{
+                      px: 4,
+                      py: 1.5,
+                      fontSize: "1.1rem",
+                      color: "#E85D04",
+                      borderColor: "#E85D04",
+                      "&:hover": {
+                        borderColor: "#D85004",
+                        bgcolor: "rgba(232, 93, 4, 0.05)",
+                      },
+                    }}
+                  >
+                    Donate
                   </Button>
                 </Link>
               </Box>
