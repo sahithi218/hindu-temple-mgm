@@ -119,7 +119,8 @@ export default function Home() {
           sx={{
             mb: 6,
             fontWeight: 700,
-            background: "linear-gradient(45deg,rgb(220, 222, 230) 30%,rgb(220, 222, 230) 90%)",
+            background: "linear-gradient(45deg,rgb(12, 13, 14) 30%,rgb(12, 13, 14) 30%)",
+            bgcolor: "background.paper",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             textShadow: "2px 2px 4px rgba(0,0,0,0.1)",

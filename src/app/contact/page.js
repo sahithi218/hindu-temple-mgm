@@ -79,124 +79,21 @@ export default function ContactPage() {
                 <Typography variant="h6" sx={{ mb: 3, fontWeight: 600 }}>
                   Send us a Message
                 </Typography>
-                <form onSubmit={handleSubmit}>
-                  <Grid container spacing={3}>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        fullWidth
-                        label="Name"
-                        required
-                        value={formData.name}
-                        onChange={handleChange("name")}
-                        sx={{
-                          "& .MuiOutlinedInput-root": {
-                            "&:hover fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                            "&.Mui-focused fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        fullWidth
-                        label="Email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={handleChange("email")}
-                        sx={{
-                          "& .MuiOutlinedInput-root": {
-                            "&:hover fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                            "&.Mui-focused fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        fullWidth
-                        label="Phone"
-                        value={formData.phone}
-                        onChange={handleChange("phone")}
-                        sx={{
-                          "& .MuiOutlinedInput-root": {
-                            "&:hover fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                            "&.Mui-focused fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12} sm={6}>
-                      <TextField
-                        fullWidth
-                        label="Subject"
-                        required
-                        value={formData.subject}
-                        onChange={handleChange("subject")}
-                        sx={{
-                          "& .MuiOutlinedInput-root": {
-                            "&:hover fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                            "&.Mui-focused fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12}>
-                      <TextField
-                        fullWidth
-                        label="Message"
-                        multiline
-                        rows={4}
-                        required
-                        value={formData.message}
-                        onChange={handleChange("message")}
-                        sx={{
-                          "& .MuiOutlinedInput-root": {
-                            "&:hover fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                            "&.Mui-focused fieldset": {
-                              borderColor: "#E85D04",
-                            },
-                          },
-                        }}
-                      />
-                    </Grid>
-                    <Grid item xs={12}>
-                      <Button
-                        type="submit"
-                        variant="contained"
-                        size="large"
-                        fullWidth
-                        sx={{
-                          bgcolor: "#E85D04",
-                          py: 1.5,
-                          "&:hover": {
-                            bgcolor: "#D85004",
-                          },
-                        }}
-                      >
-                        Send Message
-                      </Button>
-                    </Grid>
-                  </Grid>
-                </form>
+
+                <Box sx={{ my: 4 }}>
+                  <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSe3KVuIsmfLIc0lpjwZD53DSB82rEdERtivPQwK1OdX4aPC2Q/viewform?embedded=true"
+                    width="100%"
+                    height="800"
+                    frameBorder="0"
+                    marginHeight="0"
+                    marginWidth="0"
+                    title="Google Form"
+                  >
+                    Loading…
+                  </iframe>
+                </Box>
+             
               </CardContent>
             </Card>
           </Grid>

@@ -43,35 +43,41 @@ const values = [
   },
 ];
 
-const templeMembers = [
+const priestMembers = [
   {
-    name: "Pandit Sharma",
+    name: "Ujas Bhai Pancholi",
     role: "Head Priest",
     image: "/images/members/head-priest.jpg",
   },
+  
+];
+const boardMembers = [  
   {
-    name: "X X",
-    role: "Chairman",
+    name: "Bipin Kumar",
+    role: "Board Chairman",
     image: "/images/members/chairman.jpg",
-  },
+  },    
+];
+const executiveCommitteeMembers = [
+  
   {
-    name: "Y Y",
-    role: "Vice Chairman",
-    image: "/images/members/vice-chairman.jpg",
-  },
+    name: "Bipin Kumar",
+    role: "Chairman - Board",
+    image: "/images/members/chairman.jpg",
+  },  
   {
-    name: "Arun Garepelly",
-    role: "President",
+    name: "Arun Garrepelly",
+    role: "President - Executive Committee",
     image: "/images/members/secretary.jpg",
   },
   {
-    name: "Z Z",
-    role: "Vice President",
+    name: "Jaimini Patel",
+    role: "Vice President - Executive Committee",
     image: "/images/members/treasurer.jpg",
   },
   {
-    name: "A A",
-    role: "Treasurer",
+    name: "Shanthanu Rastogi",
+    role: "Treasurer - Executive Committee",
     image: "/images/members/manager.jpg",
   },
 ];
@@ -83,7 +89,7 @@ export default function AboutPage() {
 
       <Container maxWidth="lg" sx={{ py: 6 }}>
         {/* Mission Statement */}
-        <Box sx={{ mb: 8, textAlign: "center" }}>
+        <Box sx={{ mb: 8, textAlign: "center", }}>
           <Typography
             variant="h4"
             sx={{
@@ -199,27 +205,14 @@ export default function AboutPage() {
           >
             Our History
           </Typography>
-          <Grid container spacing={6} alignItems="center">
-            <Grid item xs={12} md={6}>
-              <Box
-                component="img"
-                src="/images/temple/temple-history.jpg"
-                alt="Temple History"
-                sx={{
-                  width: "100%",
-                  height: "auto",
-                  borderRadius: 2,
-                  boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6}>
               <Typography
                 variant="body1"
                 sx={{
                   color: "text.secondary",
                   mb: 2,
                   lineHeight: 1.8,
+                  
                 }}
               >
                 Founded in 2019, the Hindu Temple of Montgomery emerged from the
@@ -251,24 +244,43 @@ export default function AboutPage() {
                 serving the spiritual needs of our community.
               </Typography>
             </Grid>
+          <Grid container spacing={6} alignItems="center">
+            {/* <Grid item xs={12} md={6}>
+              <Box
+                component="img"
+                src="/images/temple/temple-history.jpg"
+                alt="Temple History"
+                sx={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: 2,
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+                }}
+              />
+            </Grid> */}
+            
           </Grid>
         </Box>
 
         {/* Temple Members Section */}
-        <Box sx={{ mt: 8 }}>
+       
+     
+
+         <Box sx={{ mt: 8, boxShadow:6, borderRadius:1 }}>
           <Typography
             variant="h5"
             sx={{
               mb: 4,
+              pt:2,
               textAlign: "center",
               color: "text.primary",
               fontWeight: 600,
             }}
           >
-            Temple Members
+            Executive Committee members
           </Typography>
           <Grid container spacing={3}>
-            {templeMembers.map((member, index) => (
+            {executiveCommitteeMembers.map((member, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <Card
                   sx={{
@@ -288,7 +300,7 @@ export default function AboutPage() {
                         textAlign: "center",
                       }}
                     >
-                      <Avatar
+                      {/* <Avatar
                         src={member.image}
                         alt={member.name}
                         sx={{
@@ -305,7 +317,87 @@ export default function AboutPage() {
                           .split(" ")
                           .map((n) => n[0])
                           .join("")}
-                      </Avatar>
+                      </Avatar> */}
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          fontWeight: 600,
+                          mb: 0.5,
+                        }}
+                      >
+                        {member.name}
+                      </Typography>
+                      <Typography
+                        variant="body1"
+                        sx={{
+                          color: "#E85D04",
+                          fontWeight: 500,
+                        }}
+                      >
+                        {member.role}
+                      </Typography>
+                    </Box>
+                  </CardContent>
+                </Card>
+              </Grid>
+            ))}
+
+            
+          </Grid>
+        </Box>
+
+         <Box sx={{ mt: 4 , boxShadow: 6, borderRadius:1}}>
+          <Typography
+            variant="h5"
+            sx={{
+              mb: 4,
+              pt:2,
+              textAlign: "center",
+              color: "text.primary",
+              fontWeight: 600,
+            }}
+          >
+            Priests
+          </Typography>
+          <Grid container spacing={3}>
+            {priestMembers.map((member, index) => (
+              <Grid item xs={12} sm={6} md={4} key={index}>
+                <Card
+                  sx={{
+                    height: "100%",
+                    transition: "transform 0.2s",
+                    "&:hover": {
+                      transform: "translateY(-4px)",
+                    },
+                  }}
+                >
+                  <CardContent>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        textAlign: "center",
+                      }}
+                    >
+                      {/* <Avatar
+                        src={member.image}
+                        alt={member.name}
+                        sx={{
+                          width: 120,
+                          height: 120,
+                          mb: 2,
+                          fontSize: 32,
+                          bgcolor: "rgba(232, 93, 4, 0.1)",
+                          color: "#E85D04",
+                          border: "3px solid rgba(232, 93, 4, 0.2)",
+                        }}
+                      >
+                        {member.name
+                          .split(" ")
+                          .map((n) => n[0])
+                          .join("")}
+                      </Avatar> */}
                       <Typography
                         variant="h6"
                         sx={{

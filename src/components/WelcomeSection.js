@@ -96,6 +96,23 @@ const WelcomeSection = () => {
                     Our Services
                   </Button>
                 </Link>
+                <Link href="/donate" style={{ textDecoration: "none" }}>
+                  <Button
+                    variant="contained"
+                    size="large"
+                    sx={{
+                      px: 4,
+                      py: 1.5,
+                      fontSize: "1.1rem",
+                      bgcolor: "#E85D04",
+                      "&:hover": {
+                        bgcolor: "#D85004",
+                      },
+                    }}
+                  >
+                    Donate
+                  </Button>
+                </Link>
               </Box>
             </Box>
           </Grid>
