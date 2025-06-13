@@ -181,19 +181,9 @@ const Footer = () => {
           <Typography
             variant="body2"
             color="text.secondary"
-            sx={{ mt: { xs: 1, sm: 0 } }}
+            sx={{ mt: { xs: 1, sm: 0 }, fontWeight: 600 }}
           >
-            Developed by{" "}
-            {/* <MuiLink
-              // href="https://www.linkedin.com/in/sahithikotagiri/"
-              // target="_blank"
-              // rel="noopener noreferrer"
-              // underline="hover"
-              // color="primary"
-            >
-              Sahithi Kotagiri
-            </MuiLink> */}
-            Bhakth Jan
+            Developed by <strong>Bhakth Jan</strong>
           </Typography>
         </Box>
       </Box>

@@ -23,7 +23,7 @@ export default function Home() {
       {/* Featured Content */}
       <Box sx={{ py: 8, px: { xs: 2, md: 4 } }}>
         <Grid container spacing={4}>
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"
@@ -46,7 +46,7 @@ export default function Home() {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"
@@ -68,7 +68,7 @@ export default function Home() {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"
@@ -119,7 +119,8 @@ export default function Home() {
           sx={{
             mb: 6,
             fontWeight: 700,
-            background: "linear-gradient(45deg,rgb(12, 13, 14) 30%,rgb(12, 13, 14) 30%)",
+            background:
+              "linear-gradient(45deg,rgb(12, 13, 14) 30%,rgb(12, 13, 14) 30%)",
             bgcolor: "background.paper",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",

@@ -18,8 +18,7 @@ import AttachMoney from "@mui/icons-material/AttachMoney";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PageHero from "@/components/Layout/PageHero";
 import Collapse from "@mui/material/Collapse";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
-
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const services = [
   {
@@ -206,7 +205,8 @@ const services = [
   },
   {
     id: 15,
-    title: "Gruha Pravesham with Satyanarayan puja, Havan, Vaasthu puja (House Warming)",
+    title:
+      "Gruha Pravesham with Satyanarayan puja, Havan, Vaasthu puja (House Warming)",
     memberprice: "N/A",
     nonmemberprice: "N/A",
     devoteehomeprice: "$351",
@@ -347,7 +347,6 @@ const services = [
     image: "/images/events/temple.jpg",
     category: "Special",
   },
-  
 ];
 
 export default function ServicesPage() {
@@ -358,10 +357,10 @@ export default function ServicesPage() {
     setExpandedId((prev) => (prev === id ? null : id));
   };
 
-   return (
+  return (
     <Box>
       <PageHero title="Temple Services" icon={EventIcon} />
-<Container maxWidth="lg" sx={{ py: 2,mb:0 }}>
+      <Container maxWidth="lg" sx={{ py: 2, mb: 0 }}>
         {/* Introduction */}
         <Box sx={{ mb: 6, textAlign: "center" }}>
           <Typography
@@ -387,78 +386,111 @@ export default function ServicesPage() {
             with the divine and maintain our cultural traditions.
           </Typography>
         </Box>
-        </Container>
+      </Container>
 
-<Container maxWidth="lg" sx={{ display: "flex", justifyContent: "flex-start",py: 2,mt: 0,mb:0 }}>
-        <Box sx={{ 
-    mb: 6,
-    textAlign: "left"
-   }}>
-    <Typography
-      gutterBottom
-      variant="h6"
-      sx={{
-        fontWeight: 600,
-        color:"text.primary",
-      }}    >
-          Before exploring the services read below                
-    </Typography>
-  <Typography
-    variant="body1"
-    component="div"
-    sx={{
-      color: "text.secondary",
-      maxWidth: "800px",
-      mx: "auto",
-    }}
-  >
-    <ul style={{ paddingLeft: "1.2em" }}>
-      <li>
-        All pooja performed at the devotee's home must pay the charges mentioned below in addition to the pooja fee.
-        <ul style={{ paddingLeft: "1.2em", listStyleType: "circle" }}>
-            <li>
-              Within Montgomery, Pike Road, Wetumpka, Prattville, and Millbrook must pay $20 for mileage in case you can’t arrange for priest travel.
-            </li>
-      </ul>
-      </li>
-     
-      <li>
-        Transportation is to be provided by devotees for Priest, for all services at home outside Montgomery, Pike Road, Wetumpka.
-      </li>
-      <li>
-        For Pooja details call Priest Ujas Pancholi at 254-718-7354 and Pooja Samagris can be provided at additional cost.
-      </li>
-      <li>
-        Donations are preferred by check. All contributions are tax-deductible.
-      </li>
-      <li>
-        <strong>Temple performs Satyanarayana Pooja on every Poornima for $51.</strong>
-      </li>
-      <li>
-        <strong>Shravan Month Mondays Linga abhishekam (Rudri), if the priest is involved, is $51.</strong>
-      </li>
-      <li>
-        Membership fees per year is $101.
-      </li>
-      <li>
-        Membership fees with a package (1 Satyanarayan Pooja, 1 Archana) is $151 and devotees cannot choose any poornima or festival days, also please check the priest for availability.
-      </li>
-      <li>
-        If any devotee would like to provide food to their guests while performing pooja should pay cleaning charges.
-      </li>
-      <li>
-        For any pooja at the temple if the guest count exceeds 60 then the devotee must pay $150 for utilizing the property and $150 in cleaning charges.
-      </li>
-    </ul>
-  </Typography>  
-</Box>
-        </Container>
+      <Container
+        maxWidth="lg"
+        sx={{
+          display: "flex",
+          justifyContent: "flex-start",
+          py: 2,
+          mt: 0,
+          mb: 0,
+        }}
+      >
+        <Box
+          sx={{
+            mb: 6,
+            textAlign: "left",
+          }}
+        >
+          <Typography
+            gutterBottom
+            variant="h6"
+            sx={{
+              fontWeight: 600,
+              color: "text.primary",
+            }}
+          >
+            Before exploring the services read below
+          </Typography>
+          <Typography
+            variant="body1"
+            component="div"
+            sx={{
+              color: "text.secondary",
+              maxWidth: "800px",
+              mx: "auto",
+            }}
+          >
+            <ul style={{ paddingLeft: "1.2em" }}>
+              <li>
+                All pooja performed at the devotee's home must pay the charges
+                mentioned below in addition to the pooja fee.
+                <ul style={{ paddingLeft: "1.2em", listStyleType: "circle" }}>
+                  <li>
+                    Within Montgomery, Pike Road, Wetumpka, Prattville, and
+                    Millbrook must pay $20 for mileage in case you can’t arrange
+                    for priest travel.
+                  </li>
+                </ul>
+              </li>
 
-      <Container maxWidth="lg" sx={{ bgcolor: "#f5f5f5",boxShadow:4,borderRadius:1,py: 2,mt: 0,mb:2 }}>
+              <li>
+                Transportation is to be provided by devotees for Priest, for all
+                services at home outside Montgomery, Pike Road, Wetumpka.
+              </li>
+              <li>
+                For Pooja details call Priest Ujas Pancholi at 254-718-7354 and
+                Pooja Samagris can be provided at additional cost.
+              </li>
+              <li>
+                Donations are preferred by check. All contributions are
+                tax-deductible.
+              </li>
+              <li>
+                <strong>
+                  Temple performs Satyanarayana Pooja on every Poornima for $51.
+                </strong>
+              </li>
+              <li>
+                <strong>
+                  Shravan Month Mondays Linga abhishekam (Rudri), if the priest
+                  is involved, is $51.
+                </strong>
+              </li>
+              <li>Membership fees per year is $101.</li>
+              <li>
+                Membership fees with a package (1 Satyanarayan Pooja, 1 Archana)
+                is $151 and devotees cannot choose any poornima or festival
+                days, also please check the priest for availability.
+              </li>
+              <li>
+                If any devotee would like to provide food to their guests while
+                performing pooja should pay cleaning charges.
+              </li>
+              <li>
+                For any pooja at the temple if the guest count exceeds 60 then
+                the devotee must pay $150 for utilizing the property and $150 in
+                cleaning charges.
+              </li>
+            </ul>
+          </Typography>
+        </Box>
+      </Container>
+
+      <Container
+        maxWidth="lg"
+        sx={{
+          bgcolor: "#f5f5f5",
+          boxShadow: 4,
+          borderRadius: 1,
+          py: 2,
+          mt: 0,
+          mb: 2,
+        }}
+      >
         {/* Introduction */}
-
-
-  
 
         {/* Events Grid */}
         <Grid container spacing={4}>
@@ -481,7 +513,7 @@ export default function ServicesPage() {
                   <Box
                     onClick={() => {
                       //console.log("Clicked:", event.title);
-                      handleToggle(event.id)
+                      handleToggle(event.id);
                     }}
                     sx={{
                       cursor: "pointer",
@@ -493,53 +525,71 @@ export default function ServicesPage() {
                       variant="h6"
                       sx={{
                         fontWeight: 600,
-                        color: expandedId === event.id ? "primary.main" : "text.primary",
+                        color:
+                          expandedId === event.id
+                            ? "primary.main"
+                            : "text.primary",
                       }}
                     >
-                      {event.title}                      
+                      {event.title}
                     </Typography>
                     <ExpandMoreIcon
                       sx={{
-                        transform: expandedId === event.id ? "rotate(180deg)" : "rotate(0deg)",
+                        transform:
+                          expandedId === event.id
+                            ? "rotate(180deg)"
+                            : "rotate(0deg)",
                         transition: "transform 0.3s ease",
                         color: "text.secondary",
                       }}
-                       />
+                    />
                   </Box>
 
-                  <Collapse in={expandedId === event.id} timeout="auto" unmountOnExit>    
-                     <AttachMoney
-                        sx={{ fontSize: 20, mr: 1, color: "#E85D04" }}
-                      />               
-                      <Typography variant="h6" sx={{ color: "text.secondary", mb: 2 }}>
-                        At Temple
-                      </Typography>
-                      <Typography variant="body2" sx={{ mb: 1 }}>Member Price: {event.memberprice}</Typography>
-                      <Typography variant="body2" sx={{ mb: 2 }}>Non Member Price: {event.nonmemberprice}</Typography>
-                      
-                      <Typography variant="h6" sx={{ color: "text.secondary", mb: 2 }}>
-                        At Devotee’s Home
-                      </Typography>
-                      <Typography variant="body2" sx={{ mb: 2 }}>Price: {event.devoteehomeprice}</Typography>
+                  <Collapse
+                    in={expandedId === event.id}
+                    timeout="auto"
+                    unmountOnExit
+                  >
+                    <AttachMoney
+                      sx={{ fontSize: 20, mr: 1, color: "#E85D04" }}
+                    />
+                    <Typography
+                      variant="h6"
+                      sx={{ color: "text.secondary", mb: 2 }}
+                    >
+                      At Temple
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 1 }}>
+                      Member Price: {event.memberprice}
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                      Non Member Price: {event.nonmemberprice}
+                    </Typography>
 
-                      <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        sx={{ mb: 2 }}
-                      >
-                        {event.description}
-                      </Typography>
-                    </Collapse>
-                  
+                    <Typography
+                      variant="h6"
+                      sx={{ color: "text.secondary", mb: 2 }}
+                    >
+                      At Devotee’s Home
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                      Price: {event.devoteehomeprice}
+                    </Typography>
+
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ mb: 2 }}
+                    >
+                      {event.description}
+                    </Typography>
+                  </Collapse>
                 </CardContent>
               </Card>
             </Grid>
           ))}
-</Grid>
-
-
+        </Grid>
       </Container>
     </Box>
   );
- 
 }
