@@ -647,7 +647,7 @@ export default function ServicesPage() {
         fontWeight: 600,
         color:"text.primary",
       }}    >
-          Before exploring the services read below                
+          Also please read below              
     </Typography>
   <Typography
     variant="body1"

@@ -167,7 +167,7 @@ export default function DonatePage() {
                 <CardMedia
                     component="img"
                     image="/images/donations/step2.png"
-                    alt="step1"
+                    alt="step2"
                     sx={{
                       height: 500,
                       width: "100%",
@@ -190,7 +190,7 @@ export default function DonatePage() {
                 <CardMedia
                     component="img"
                     image="/images/donations/step3.png"
-                    alt="step1"
+                    alt="step3"
                     sx={{
                       height: "FitScreen",
                       width: "100%",

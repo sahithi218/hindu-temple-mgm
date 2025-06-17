@@ -51,7 +51,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 height="200"
-                image="/images/services.png"
+                image="/images/Services.png"
                 alt="Temple Services"
               />
               <CardContent>
@@ -73,7 +73,7 @@ export default function Home() {
               <CardMedia
                 component="img"
                 height="200"
-                image="/images/donation.jpg"
+                image="/images/Donation.jpg"
                 alt="Support the Temple"
               />
               <CardContent>
@@ -119,8 +119,7 @@ export default function Home() {
           sx={{
             mb: 6,
             fontWeight: 700,
-            background: "linear-gradient(45deg,rgb(12, 13, 14) 30%,rgb(12, 13, 14) 30%)",
-            bgcolor: "background.paper",
+            background: "linear-gradient(45deg,rgb(12, 13, 14) 30%,rgb(12, 13, 14) 30%)",            
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             textShadow: "2px 2px 4px rgba(0,0,0,0.1)",
