@@ -543,7 +543,9 @@ export default function ServicesPage() {
               }}
             >
               {event.title}
+               
             </Typography>
+            
             {/* <ExpandMoreIcon
               sx={{
                 transition: "transform 0.3s ease",
