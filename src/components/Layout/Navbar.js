@@ -26,6 +26,7 @@ const navItems = [
   { title: "Events", path: "/events" },
   { title: "Services", path: "/services" },
   { title: "Donate", path: "/donate" },
+  { title: "Membership", path: "/membership" },
   { title: "About", path: "/about" },
   { title: "Contact", path: "/contact" },
 ];
@@ -114,27 +115,27 @@ const Navbar = () => {
             textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
           }}
         >
-          <Link href="/" style={{ textDecoration: "none" , color: "white"}} > Hindu Temple of Montgomery </Link>
+          <Link href="/" style={{ textDecoration: "none", color: "white" }}>
+            {" "}
+            Hindu Temple of Montgomery{" "}
+          </Link>
           <Typography
-          variant="body2"
-          component="div"
-          sx={{
-            flexGrow: 1,
-            fontWeight: 300,
-            color: "white",
-            textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
-            fontSize: 11
-          }}
-        >
-        A 501(c)(3) Non - Profit Organization , Tax ID:63-0966971        
-        <br />
-        2005 Meriwether Rd, Pike Road, AL  - 36064                  
-        </Typography>
-                    
+            variant="body2"
+            component="div"
+            sx={{
+              flexGrow: 1,
+              fontWeight: 300,
+              color: "white",
+              textShadow: "1px 1px 2px rgba(0,0,0,0.1)",
+              fontSize: 11,
+            }}
+          >
+            A 501(c)(3) Non - Profit Organization , Tax ID:63-0966971
+            <br />
+            2005 Meriwether Rd, Pike Road, AL - 36064
+          </Typography>
         </Typography>
 
-        
-        
         {!isMobile && (
           <Box sx={{ display: "flex", gap: 1 }}>
             {navItems.map((item) => (
