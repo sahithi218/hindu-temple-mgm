@@ -12,15 +12,15 @@ import {
   Chip,
   Button,
   IconButton,
+  Modal,
 } from "@mui/material";
 import EventIcon from "@mui/icons-material/Event";
 import AttachMoney from "@mui/icons-material/AttachMoney";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PageHero from "@/components/Layout/PageHero";
 import Collapse from "@mui/material/Collapse";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore"
-import Modal from "@mui/material/Modal";
-
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import CloseIcon from "@mui/icons-material/Close";
 
 const services = [
   {
@@ -88,7 +88,7 @@ const services = [
     description:
       "Satyanarayana Pooja is a Hindu ritual performed to worship Lord Vishnu, specifically in his Satyanarayana form, which is associated with truth and righteousness. It's a popular practice, often performed to seek blessings for wealth, prosperity, good health, and happiness in the household. ",
     image: "/images/services/archana.jpg",
-    category: "Spiritual",    
+    category: "Spiritual",
   },
   {
     id: 6,
@@ -218,7 +218,8 @@ const services = [
   },
   {
     id: 15,
-    title: "Gruha Pravesham with Satyanarayan puja, Havan, Vaasthu puja (House Warming)",
+    title:
+      "Gruha Pravesham with Satyanarayan puja, Havan, Vaasthu puja (House Warming)",
     memberprice: "N/A",
     nonmemberprice: "N/A",
     devoteehomeprice: "$351",
@@ -339,7 +340,7 @@ const services = [
     description:
       "Sahasranama Archana, often referred to as the 1000-name offering ritual, is a deeply devotional practice in which a Hindu priest chants the Sahasranama Stotra—a litany of a deity’s thousand names—while making symbolic offerings.",
     image: "/images/services/archana.jpg",
-    category: "Spiritual",    
+    category: "Spiritual",
   },
   {
     id: 24,
@@ -368,7 +369,6 @@ const services = [
     category: "Special",
     dh: "yes",
   },
-  
 ];
 
 export default function ServicesPage() {
@@ -382,17 +382,17 @@ export default function ServicesPage() {
   const [openModalId, setOpenModalId] = useState(null);
 
   const handleOpenModal = (id) => {
-      setOpenModalId(id);
-    };
+    setOpenModalId(id);
+  };
 
-    const handleCloseModal = () => {
-      setOpenModalId(null);
-    };
+  const handleCloseModal = () => {
+    setOpenModalId(null);
+  };
 
-   return (
+  return (
     <Box>
       <PageHero title="Temple Services" icon={EventIcon} />
-  <Container maxWidth="lg" sx={{ py: 2,mb:0 }}>
+      <Container maxWidth="lg" sx={{ py: 2, mb: 0 }}>
         {/* Introduction */}
         <Box sx={{ mb: 6, textAlign: "center" }}>
           <Typography
@@ -418,15 +418,20 @@ export default function ServicesPage() {
             with the divine and maintain our cultural traditions.
           </Typography>
         </Box>
-  </Container>
+      </Container>
 
-
-
-  <Container maxWidth="lg" sx={{ bgcolor: "#f5f5f5",boxShadow:4,borderRadius:1,py: 2,mt: 0,mb:2 }}>
+      <Container
+        maxWidth="lg"
+        sx={{
+          bgcolor: "#f5f5f5",
+          boxShadow: 4,
+          borderRadius: 1,
+          py: 2,
+          mt: 0,
+          mb: 2,
+        }}
+      >
         {/* Introduction */}
-
-
-  
 
         {/* Events Grid */}
         {/* <Grid container spacing={4}>
@@ -506,188 +511,269 @@ export default function ServicesPage() {
         </Grid> */}
 
         <Grid container spacing={4}>
-  {services.map((event) => (
-    <Grid item xs={12} md={4} key={event.id}>
-      <Card
-        sx={{
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          borderRadius: 2,
-          boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
-          transition: "transform 0.2s ease-in-out",
-          "&:hover": {
-            transform: "translateY(-4px)",
-          },
-          textAlign: "center"          
-        }}
-      >
-        <CardContent sx={{ flexGrow: 1, p: 3 }}>
-          {/* Clickable title to open modal */}
-          <Box
-            onClick={() => handleOpenModal(event.id)}
-            sx={{
-              cursor: "pointer",
-              mb: 2,
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <Typography
-              gutterBottom
-              variant="h6"
-              sx={{
-                fontWeight: 600,
-                color: "text.primary"
-              }}
-            >
-              {event.title}
-               
-            </Typography>
-            
-            {/* <ExpandMoreIcon
+          {services.map((event) => (
+            <Grid item xs={12} md={4} key={event.id}>
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  borderRadius: 2,
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.05)",
+                  transition: "transform 0.2s ease-in-out",
+                  "&:hover": {
+                    transform: "translateY(-4px)",
+                  },
+                  textAlign: "left",
+                }}
+              >
+                <CardContent sx={{ flexGrow: 1, p: 3 }}>
+                  {/* Clickable title to open modal */}
+                  <Box
+                    onClick={() => handleOpenModal(event.id)}
+                    sx={{
+                      cursor: "pointer",
+                      mb: 2,
+                      display: "flex",
+                      justifyContent: "space-between",
+                      alignItems: "center",
+                    }}
+                  >
+                    <Typography
+                      gutterBottom
+                      variant="h6"
+                      sx={{
+                        fontWeight: 600,
+                        color: "text.primary",
+                      }}
+                    >
+                      {event.title}
+                    </Typography>
+
+                    {/* <ExpandMoreIcon
               sx={{
                 transition: "transform 0.3s ease",
                 color: "text.secondary",
               }}
             /> */}
-          </Box>
-        </CardContent>
-      </Card>
+                  </Box>
+                </CardContent>
+              </Card>
 
-      {/* Modal Section */}
-      <Modal
-        open={openModalId === event.id}
-        onClose={handleCloseModal}
+              {/* Modal Section */}
+              <Modal
+                open={openModalId === event.id}
+                onClose={handleCloseModal}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  px: 2,
+                }}
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    bgcolor: "background.paper",
+                    //p: 4,
+                    borderRadius: 2,
+                    boxShadow: 24,
+                    maxWidth: "500px",
+                    width: "100%",
+                    maxHeight: "90vh",
+                    overflowY: "auto",
+                    display: "flex",
+                    flexDirection: "column",
+                  }}
+                >
+                  {/* Top-right X button */}
+                  <IconButton
+                    aria-label="close"
+                    onClick={handleCloseModal}
+                    sx={{
+                      position: "absolute",
+                      top: 8,
+                      right: 8,
+                      zIndex: 1,
+                      color: (theme) => theme.palette.grey[500],
+                    }}
+                  >
+                    <CloseIcon />
+                  </IconButton>
+                  <Box sx={{ overflowY: "auto", p: 3, mt: 4 }}>
+                    <Typography variant="h6" sx={{ mb: 2 }}>
+                      {event.title}
+                    </Typography>
+
+                    <Typography
+                      variant="body2"
+                      color="text.secondary"
+                      sx={{ mb: 2 }}
+                    >
+                      {event.description}
+                    </Typography>
+
+                    {/* <AttachMoney sx={{ fontSize: 20, mr: 1, color: "#E85D04" }} /> */}
+                    <Typography
+                      variant="h6"
+                      sx={{ color: "text.secondary", mb: 2 }}
+                    >
+                      Price At Temple
+                    </Typography>
+                    <Typography variant="body2">
+                      Member Price: <strong>{event.memberprice}</strong>
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                      Non Member Price: <strong>{event.nonmemberprice}</strong>
+                    </Typography>
+
+                    <Typography
+                      variant="h6"
+                      sx={{ color: "text.secondary", mb: 2 }}
+                    >
+                      Price At Devotee’s Home
+                    </Typography>
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                      Price: <strong>{event.devoteehomeprice}</strong>
+                    </Typography>
+
+                    {event.dh === "yes" && (
+                      <Typography variant="body2" color="text.secondary">
+                        <ul style={{ paddingLeft: "1.2em" }}>
+                          <li>
+                            All pooja performed at the devotee's home must pay
+                            the charges mentioned below in addition to the pooja
+                            fee.
+                            <ul
+                              style={{
+                                paddingLeft: "1.2em",
+                                listStyleType: "circle",
+                              }}
+                            >
+                              <li>
+                                Within Montgomery, Pike Road, Wetumpka,
+                                Prattville, and Millbrook must pay $20 for
+                                mileage in case you can’t arrange for priest
+                                travel.
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li>
+                            Transportation is to be provided by devotees for
+                            Priest, for all services at home outside Montgomery,
+                            Pike Road, Wetumpka.
+                          </li>
+                          <li>
+                            For Pooja details call Priest Ujas Pancholi at
+                            254-718-7354 and Pooja Samagris can be provided at
+                            additional cost.
+                          </li>
+                          <li>
+                            Donations are preferred by check. All contributions
+                            are tax-deductible.
+                          </li>
+                          <li>
+                            If any devotee would like to provide food to their
+                            guests while performing pooja should pay cleaning
+                            charges.
+                          </li>
+                          <li>
+                            For any pooja at the temple if the guest count
+                            exceeds 60 then the devotee must pay $150 for
+                            utilizing the property and $150 in cleaning charges.
+                          </li>
+                        </ul>
+                      </Typography>
+                    )}
+
+                    <Button
+                      variant="contained"
+                      sx={{ mt: 2 }}
+                      onClick={handleCloseModal}
+                    >
+                      Close
+                    </Button>
+                  </Box>
+                </Box>
+              </Modal>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+
+      <Container
+        maxWidth="lg"
         sx={{
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+          py: 2,
+          mt: 0,
+          mb: 0,
         }}
       >
         <Box
           sx={{
-            bgcolor: "background.paper",
-            p: 4,
-            borderRadius: 2,
-            boxShadow: 24,
-            maxWidth: "500px",
-            width: "100%",
+            mb: 6,
+            textAlign: "left",
           }}
         >
-          <Typography variant="h6" sx={{ mb: 2 }}>
-            {event.title}
+          <Typography
+            gutterBottom
+            variant="h6"
+            sx={{
+              fontWeight: 600,
+              color: "text.primary",
+            }}
+          >
+            Also please read below
           </Typography>
-
-          <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-            {event.description}
-          </Typography>
-
-          {/* <AttachMoney sx={{ fontSize: 20, mr: 1, color: "#E85D04" }} /> */}
-          <Typography variant="h6" sx={{ color: "text.secondary", mb: 2 }}>
-            Price At Temple
-          </Typography>
-          <Typography variant="body2">Member Price: <strong>{event.memberprice}</strong></Typography>
-          <Typography variant="body2" sx={{ mb: 2 }}>Non Member Price: <strong>{event.nonmemberprice}</strong></Typography>
-
-          <Typography variant="h6" sx={{ color: "text.secondary", mb: 2 }}>
-            Price At Devotee’s Home
-          </Typography>
-          <Typography variant="body2" sx={{ mb: 2 }}>Price: <strong>{event.devoteehomeprice}</strong></Typography>
-
-          
-          {event.dh === "yes" && (
-            <Typography variant="body2" color="text.secondary">
-           <ul style={{ paddingLeft: "1.2em" }}>
+          <Typography
+            variant="body1"
+            component="div"
+            sx={{
+              color: "text.secondary",
+              maxWidth: "800px",
+              mx: "auto",
+            }}
+          >
+            <ul style={{ paddingLeft: "1.2em" }}>
               <li>
-                All pooja performed at the devotee's home must pay the charges mentioned below in addition to the pooja fee.
-                <ul style={{ paddingLeft: "1.2em", listStyleType: "circle" }}>
-                    <li>
-                      Within Montgomery, Pike Road, Wetumpka, Prattville, and Millbrook must pay $20 for mileage in case you can’t arrange for priest travel.
-                    </li>
-              </ul>
-              </li>
-            
-              <li>
-                Transportation is to be provided by devotees for Priest, for all services at home outside Montgomery, Pike Road, Wetumpka.
+                Donations are preferred by check. All contributions are
+                tax-deductible.
               </li>
               <li>
-                For Pooja details call Priest Ujas Pancholi at 254-718-7354 and Pooja Samagris can be provided at additional cost.
+                <strong>
+                  Temple performs Satyanarayana Pooja on every Poornima for $51.
+                </strong>
               </li>
               <li>
-                Donations are preferred by check. All contributions are tax-deductible.
-              </li>              
-              <li>
-                If any devotee would like to provide food to their guests while performing pooja should pay cleaning charges.
+                <strong>
+                  Shravan Month Mondays Linga abhishekam (Rudri), if the priest
+                  is involved, is $51.
+                </strong>
               </li>
               <li>
-                For any pooja at the temple if the guest count exceeds 60 then the devotee must pay $150 for utilizing the property and $150 in cleaning charges.
+                Membership fees per year is <strong>$101</strong>.
+              </li>
+              <li>
+                Membership fees with a package (1 Satyanarayan Pooja, 1 Archana)
+                is <strong>$151</strong> and devotees cannot choose any poornima
+                or festival days, also please check the priest for availability.
+              </li>
+              <li>
+                If any devotee would like to provide food to their guests while
+                performing pooja should pay cleaning charges.
+              </li>
+              <li>
+                For any pooja at the temple if the guest count exceeds 60 then
+                the devotee must pay $150 for utilizing the property and $150 in
+                cleaning charges.
               </li>
             </ul>
-          </Typography>)}
-
-          <Button variant="contained" sx={{ mt: 2 }} onClick={handleCloseModal}>
-            Close
-          </Button>
+          </Typography>
         </Box>
-      </Modal>
-    </Grid>
-  ))}
-</Grid>
-</Container>
-
-<Container maxWidth="lg" sx={{ display: "flex", justifyContent: "flex-start",py: 2,mt: 0,mb:0 }}>
-  <Box sx={{ 
-    mb: 6,
-    textAlign: "left"
-   }}>
-    <Typography
-      gutterBottom
-      variant="h6"
-      sx={{
-        fontWeight: 600,
-        color:"text.primary",
-      }}    >
-          Also please read below              
-    </Typography>
-  <Typography
-    variant="body1"
-    component="div"
-    sx={{
-      color: "text.secondary",
-      maxWidth: "800px",
-      mx: "auto",
-    }}
-  >
-    <ul style={{ paddingLeft: "1.2em" }}>
-      
-      <li>
-        Donations are preferred by check. All contributions are tax-deductible.
-      </li>
-      <li>
-        <strong>Temple performs Satyanarayana Pooja on every Poornima for $51.</strong>
-      </li>
-      <li>
-        <strong>Shravan Month Mondays Linga abhishekam (Rudri), if the priest is involved, is $51.</strong>
-      </li>
-      <li>
-        Membership fees per year is <strong>$101</strong>.
-      </li>
-      <li>
-        Membership fees with a package (1 Satyanarayan Pooja, 1 Archana) is <strong>$151</strong> and devotees cannot choose any poornima or festival days, also please check the priest for availability.
-      </li>
-      <li>
-        If any devotee would like to provide food to their guests while performing pooja should pay cleaning charges.
-      </li>
-      <li>
-        For any pooja at the temple if the guest count exceeds 60 then the devotee must pay $150 for utilizing the property and $150 in cleaning charges.
-      </li>
-    </ul>
-  </Typography>  
-  </Box>
-  </Container>
+      </Container>
     </Box>
   );
- 
 }
