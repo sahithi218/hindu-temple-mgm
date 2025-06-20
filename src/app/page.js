@@ -23,7 +23,7 @@ export default function Home() {
       {/* Featured Content */}
       <Box sx={{ py: 8, px: { xs: 2, md: 4 } }}>
         <Grid container spacing={4}>
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"
@@ -46,7 +46,7 @@ export default function Home() {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"
@@ -68,7 +68,7 @@ export default function Home() {
             </Card>
           </Grid>
 
-          <Grid item xs={12} md={2.5}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"

@@ -31,13 +31,13 @@ const WelcomeSection = () => {
                   fontSize: { xs: "2.5rem", md: "3.5rem" },
                   fontWeight: 600,
                   mb: 2,
-                  // background:
-                  //   "linear-gradient(45deg, #F48C06 30%, #E85D04 90%)",
+                  background:
+                    "linear-gradient(45deg, #F48C06 30%, #E85D04 90%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                 }}
               >
-                Welcome to Hindu Temple Montgomery
+                Welcome to Hindu Temple of Montgomery
               </Typography>
               <Typography
                 variant="h2"
@@ -98,15 +98,17 @@ const WelcomeSection = () => {
                 </Link>
                 <Link href="/donate" style={{ textDecoration: "none" }}>
                   <Button
-                    variant="contained"
+                    variant="outlined"
                     size="large"
                     sx={{
                       px: 4,
                       py: 1.5,
                       fontSize: "1.1rem",
-                      bgcolor: "#E85D04",
+                      color: "#E85D04",
+                      borderColor: "#E85D04",
                       "&:hover": {
-                        bgcolor: "#D85004",
+                        borderColor: "#D85004",
+                        bgcolor: "rgba(232, 93, 4, 0.05)",
                       },
                     }}
                   >
