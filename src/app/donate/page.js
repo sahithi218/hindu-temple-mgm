@@ -14,7 +14,7 @@ import {
   Select,
   MenuItem,
   InputAdornment,
-  CardMedia,
+  CardMedia
 } from "@mui/material";
 import { useState } from "react";
 import PageHero from "@/components/Layout/PageHero";
@@ -44,7 +44,8 @@ const donationOptions = [
   },
 ];
 
-export default function DonatePage() {
+export default function DonatePage() {  
+
   return (
     <Box>
       <PageHero title="Support Our Temple" icon={MonetizationOnIcon} />
@@ -75,135 +76,134 @@ export default function DonatePage() {
             purpose and amount below to contribute.
           </Typography>
 
+
+
           <Typography
             variant="body1"
             sx={{
               color: "text.secondary",
               maxWidth: "800px",
-              mx: "auto",
-              mt: 2,
+              mx: "auto",              
+              mt: 2            
             }}
           >
-            We’re proud to partner with <strong>Zeffy.com</strong> to collect
-            donations. As a platform designed specifically for nonprofits, Zeffy
-            ensures that 100% of your contributions go directly to our
-            organization—with zero transaction fees.
+            We’re proud to partner with <strong>Zeffy.com</strong> to collect donations. As a platform designed specifically for nonprofits, Zeffy ensures that 100% of your contributions go directly to our organization—with zero transaction fees.
           </Typography>
 
           <Box
-            sx={{
-              position: "fixed",
-              bottom: 0,
-              left: 0,
-              width: "100%",
-              bgcolor: "#fff",
-              borderTop: "1px solid #ddd",
-              py: 2,
-              display: "flex",
-              justifyContent: "center",
-              zIndex: 1300,
-            }}
-          >
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                bgcolor: "#E85D04",
-                color: "#fff",
-                "&:hover": {
-                  bgcolor: "#D85004",
-                },
-              }}
-              href="https://www.zeffy.com/en-US/donation-form/support-our-temple-donation-form-for-hindu-temple-of-montgomery"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Donate
-            </Button>
-          </Box>
+  sx={{
+    position: "fixed",       
+    bottom: 0,
+    left: 0,
+    width: "100%",
+    bgcolor: "#fff",
+    borderTop: "1px solid #ddd",
+    py: 2,
+    display: "flex",
+    justifyContent: "center",
+    zIndex: 1300,            
+  }}
+>
+  <Button
+    variant="contained"
+    size="large"
+    sx={{
+      bgcolor: "#E85D04",
+      color: "#fff",
+      "&:hover": {
+        bgcolor: "#D85004",
+      },
+    }}
+    href="https://www.zeffy.com/en-US/donation-form/support-our-temple-donation-form-for-hindu-temple-of-montgomery"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Donate
+  </Button>
+</Box>
         </Box>
 
         <Grid item xs={12} md={7}>
-          <Card sx={{ mb: 4, boxShadow: 2 }}>
-            <CardContent>
-              <Typography variant="h6" sx={{ mb: 3 }}>
-                Since our donation platform provides zero transaction fee we
-                would like you to follow below steps when you are donating to
-                avoid platform fees.
-              </Typography>
+            <Card sx={{ mb: 4, boxShadow: 2 }}>
+              <CardContent>
+                <Typography variant="h6" sx={{ mb: 3 }}>
+                  Since our donation platform provides zero transaction fee we would like you to follow below steps when you are donating to avoid platform fees.
+                </Typography>
 
-              <Typography variant="h7" sx={{ mb: 3 }}>
-                <strong>Step1:</strong>
-              </Typography>
-              <Typography
-                sx={{
-                  color: "text.primary",
-                  mx: "auto",
-                }}
-              >
-                Enter Custom amount or select from the options available.
-              </Typography>
-              <CardMedia
-                component="img"
-                image="/images/donations/step1.png"
-                alt="step1"
-                sx={{
-                  height: 240,
-                  width: "100%",
-                  objectFit: "cover",
-                  mb: 3,
-                }}
-              />
+                <Typography variant="h7" sx={{ mb: 3 }}>
+                  <strong>Step1:</strong>
+                </Typography>
+                <Typography                  
+                  sx={{
+                    color: "text.primary",
+                    mx: "auto"                    
+                  }}
+                >
+                  Enter Custom amount or select from the options available.
+                </Typography>
+                <CardMedia
+                    component="img"
+                    image="/images/donations/step1.png"
+                    alt="step1"
+                    sx={{
+                      height: 240,
+                      width: "100%",
+                      objectFit: "cover",
+                      mb: 3
+                    }}
+                  />
 
-              <Typography variant="h7" sx={{ mb: 3 }}>
-                <strong>Step2:</strong>
-              </Typography>
-              <Typography
-                sx={{
-                  color: "text.primary",
-                  mx: "auto",
-                }}
-              >
-                Select percentage to 'Other' and Contribution to '0' as shown in
-                the picture
-              </Typography>
-              <CardMedia
-                component="img"
-                image="/images/donations/step2.png"
-                alt="step1"
-                sx={{
-                  height: 500,
-                  width: "100%",
-                  objectFit: "cover",
-                  mb: 3,
-                }}
-              />
+                  <Typography variant="h7" sx={{ mb: 3 }}>
+                  <strong>Step2:</strong>
+                </Typography>
+                <Typography                  
+                  sx={{
+                    color: "text.primary",
+                    mx: "auto"                    
+                  }}
+                >
+                  Select percentage to 'Other' and Contribution to '0' as shown in the picture
+                </Typography>
+                <CardMedia
+                    component="img"
+                    image="/images/donations/step2.png"
+                    alt="step2"
+                    sx={{
+                      height: 500,
+                      width: "100%",
+                      objectFit: "cover",
+                       mb: 3
+                    }}
+                  />
 
-              <Typography variant="h7" sx={{ mb: 3 }}>
-                <strong>Step3:</strong>
-              </Typography>
-              <Typography
-                sx={{
-                  color: "text.primary",
-                  mx: "auto",
-                }}
-              >
-                Finish the rest of the steps and click donate to make payment
-              </Typography>
-              <CardMedia
-                component="img"
-                image="/images/donations/step3.png"
-                alt="step1"
-                sx={{
-                  height: "FitScreen",
-                  width: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            </CardContent>
-          </Card>
-        </Grid>
+                  <Typography variant="h7" sx={{ mb: 3 }}>
+                  <strong>Step3:</strong>
+                </Typography>
+                <Typography                  
+                  sx={{
+                    color: "text.primary",
+                    mx: "auto"                    
+                  }}
+                >
+                  Finish the rest of the steps and click donate to make payment
+                </Typography>
+                <CardMedia
+                    component="img"
+                    image="/images/donations/step3.png"
+                    alt="step3"
+                    sx={{
+                      height: "FitScreen",
+                      width: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </CardContent>
+              </Card>
+            </Grid>
+
+
       </Container>
+
     </Box>
   );
 }
