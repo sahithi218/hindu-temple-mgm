@@ -32,13 +32,13 @@ const events = [
   },
   {
     id: 2,
-    title: "Temple Anniversary Celebration",
-    date: "June 9, 2024",
-    time: "9:00 AM - 9:00 PM",
+    title: "Bhagawan Jagannath Rath Yatra",
+    date: "June 26, 2025 from 5:00 PM",
+    time: "Temple open from 8:00 AM - 8 PM",
     location: "Temple Complex",
     description:
-      "Join us in celebrating our temple's fifth anniversary with special pujas, community lunch (Annadanam), cultural programs, and evening concert. All devotees are welcome.",
-    image: "/images/events/temple.jpg",
+      "This is a holy day throughout the year in which Bhagwan Jagnnath will step out of the temple with his sister Subhadra abd brother Balram. During the Rathyatra, the devotees dance, chant bhajan, pull Charioy with rope and get the oppurtunity to receive the blessings of the Bhagwan Jagnnath through the voyage.",
+    image: "/images/events/jagannath-rath-yatra.jpg",
     category: "Special",
   },
   // {
