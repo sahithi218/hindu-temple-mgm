@@ -10,6 +10,7 @@ import {
   CardContent,
   CardMedia,
   Chip,
+  Modal,
   Button,
   IconButton,
 } from "@mui/material";
@@ -17,6 +18,7 @@ import EventIcon from "@mui/icons-material/Event";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PageHero from "@/components/Layout/PageHero";
+import CloseIcon from "@mui/icons-material/Close";
 
 const events = [
   {
@@ -28,6 +30,7 @@ const events = [
     description:
       "A comprehensive chanting program focusing on authentic pronunciation and meaning of Bhagavad Gita shlokas. Taught by Dr. Chandra Shekar from Greenville, AL. Open to ages 7 and up. Includes 1-on-1 feedback and weekly live sessions. To join, text 334-245-3017 or email hindutemple.montgomery@gmail.com.",
     image: "/images/events/bhagavad-gita.jpg",
+    flyer_image: "/images/events/bhagavad-gita.jpg",
     category: "Spiritual",
   },
   {
@@ -39,6 +42,7 @@ const events = [
     description:
       "This is a holy day throughout the year in which Bhagwan Jagnnath will step out of the temple with his sister Subhadra abd brother Balram. During the Rathyatra, the devotees dance, chant bhajan, pull Charioy with rope and get the oppurtunity to receive the blessings of the Bhagwan Jagnnath through the voyage.",
     image: "/images/events/jagannath-rath-yatra.jpg",
+    flyer_image: "/images/events/jagannath-temple-flyer.jpg",
     category: "Special",
   },
   // {
@@ -66,6 +70,18 @@ const events = [
 ];
 
 export default function EventsPage() {
+  const [openImageModal, setOpenImageModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+  const handleImageClick = (imageUrl) => {
+    setSelectedImage(imageUrl);
+    setOpenImageModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenImageModal(false);
+    setSelectedImage("");
+  };
+
   return (
     <Box>
       <PageHero title="Temple Events" icon={EventIcon} />
@@ -114,7 +130,10 @@ export default function EventsPage() {
                   },
                 }}
               >
-                <Box sx={{ position: "relative" }}>
+                <Box
+                  sx={{ position: "relative", cursor: "pointer" }}
+                  onClick={() => handleImageClick(event.flyer_image)}
+                >
                   <CardMedia
                     component="img"
                     image={event.image}
@@ -226,6 +245,46 @@ export default function EventsPage() {
           ))}
         </Grid>
       </Container>
+      {/* Image Modal */}
+      <Modal
+        open={openImageModal}
+        onClose={handleCloseModal}
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          px: 2,
+        }}
+      >
+        <Box
+          sx={{
+            position: "relative",
+            bgcolor: "background.paper",
+            borderRadius: 2,
+            boxShadow: 24,
+            maxWidth: "90vw",
+            maxHeight: "90vh",
+            overflow: "auto",
+          }}
+        >
+          <IconButton
+            onClick={handleCloseModal}
+            sx={{ position: "absolute", top: 8, right: 8, zIndex: 1 }}
+          >
+            <CloseIcon />
+          </IconButton>
+          <img
+            src={selectedImage}
+            alt="Event"
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "8px",
+            }}
+          />
+        </Box>
+      </Modal>
     </Box>
   );
 }
