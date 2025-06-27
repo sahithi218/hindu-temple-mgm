@@ -203,11 +203,12 @@ const pastEvents = events.filter(event => new Date(event.date) < today);
         </Box>
       </Modal>
       {pastEvents.length > 0 && (
-        <Box sx={{ mt: 8 }}>
+        <Container maxWidth="lg" sx={{py:6}}>
+        <Box sx={{ mt: 8,textAlign:"center" }}>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>
-                Past Events
+              <Typography variant="h6" sx={{ fontWeight: 600, textAlign:"center" }}>
+                For all Past Events expand this section
               </Typography>
             </AccordionSummary>
 
@@ -223,6 +224,7 @@ const pastEvents = events.filter(event => new Date(event.date) < today);
             </AccordionDetails>
           </Accordion>
         </Box>
+        </Container>
       )}
 
     </Box>
