@@ -49,22 +49,20 @@ const priestMembers = [
     role: "Head Priest",
     image: "/images/members/head-priest.jpg",
   },
-  
 ];
-const boardMembers = [  
+const boardMembers = [
   {
     name: "Bipin Kumar",
     role: "Board Chairman",
     image: "/images/members/chairman.jpg",
-  },    
+  },
 ];
 const executiveCommitteeMembers = [
-  
   {
     name: "Bipin Kumar",
     role: "Chairman - Board",
     image: "/images/members/chairman.jpg",
-  },  
+  },
   {
     name: "Arun Garrepelly",
     role: "President - Executive Committee",
@@ -89,7 +87,7 @@ export default function AboutPage() {
 
       <Container maxWidth="lg" sx={{ py: 6 }}>
         {/* Mission Statement */}
-        <Box sx={{ mb: 8, textAlign: "center", }}>
+        <Box sx={{ mb: 8, textAlign: "center" }}>
           <Typography
             variant="h4"
             sx={{
@@ -206,44 +204,41 @@ export default function AboutPage() {
             Our History
           </Typography>
           <Grid item xs={12} md={6}>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "text.secondary",
-                  mb: 2,
-                  lineHeight: 1.8,
-                  
-                }}
-              >
-                Founded in 2019, the Hindu Temple of Montgomery emerged from the
-                vision of dedicated community members who dreamed of
-                establishing a spiritual home for Hindu families in the region.
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "text.secondary",
-                  mb: 2,
-                  lineHeight: 1.8,
-                }}
-              >
-                What started as small gatherings in community members' homes has
-                grown into a vibrant temple complex that serves thousands of
-                devotees annually. Our temple has become a cornerstone of the
-                Hindu community in Montgomery and surrounding areas.
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: "text.secondary",
-                  lineHeight: 1.8,
-                }}
-              >
-                Today, we continue to grow and expand our services, staying true
-                to our commitment to preserve and promote Hindu culture while
-                serving the spiritual needs of our community.
-              </Typography>
-            </Grid>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "text.secondary",
+                mb: 2,
+                lineHeight: 1.8,
+              }}
+            >
+              Hindu temple activities started in 1980s with a few families getting together someone’s house to expose our young children  to Hindu culture and rituals. In 1995  seven devotees donated money to purchase an old church building which is our current priest’s residence and had all our religious and cultural events held there but with the growth of the Hindu community and increased participation executive committee of the temple started exploring expanding physical building and looked elsewhere to buy land to build a temple but finally decided to build the building on the land at the existing property. Plans were prepared in 2017 and temple construction started in 2018 and completed in 2019. It is remarkable to note that with tremendous support of the community the construction cost was fully paid in 3 years and temple is now debt free since 2023. Temple serves devotees of Hindu religion from all over India. We have a dedicated Hindu priest full time who resides on the temple property.
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "text.secondary",
+                mb: 2,
+                lineHeight: 1.8,
+              }}
+            >
+              What started as small gatherings in community members' homes has
+              grown into a vibrant temple complex that serves thousands of
+              devotees annually. Our temple has become a cornerstone of the
+              Hindu community in Montgomery and surrounding areas.
+            </Typography>
+            <Typography
+              variant="body1"
+              sx={{
+                color: "text.secondary",
+                lineHeight: 1.8,
+              }}
+            >
+              Today, we continue to grow and expand our services, staying true
+              to our commitment to preserve and promote Hindu culture while
+              serving the spiritual needs of our community.
+            </Typography>
+          </Grid>
           <Grid container spacing={6} alignItems="center">
             {/* <Grid item xs={12} md={6}>
               <Box
@@ -258,20 +253,17 @@ export default function AboutPage() {
                 }}
               />
             </Grid> */}
-            
           </Grid>
         </Box>
 
         {/* Temple Members Section */}
-       
-     
 
-         <Box sx={{ mt: 8, boxShadow:6, borderRadius:1 }}>
+        <Box sx={{ mt: 8, boxShadow: 6, borderRadius: 1 }}>
           <Typography
             variant="h5"
             sx={{
               mb: 4,
-              pt:2,
+              pt: 2,
               textAlign: "center",
               color: "text.primary",
               fontWeight: 600,
@@ -341,17 +333,15 @@ export default function AboutPage() {
                 </Card>
               </Grid>
             ))}
-
-            
           </Grid>
         </Box>
 
-         <Box sx={{ mt: 4 , boxShadow: 6, borderRadius:1}}>
+        <Box sx={{ mt: 4, boxShadow: 6, borderRadius: 1 }}>
           <Typography
             variant="h5"
             sx={{
               mb: 4,
-              pt:2,
+              pt: 2,
               textAlign: "center",
               color: "text.primary",
               fontWeight: 600,

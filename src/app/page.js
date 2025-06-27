@@ -3,6 +3,8 @@
 import { Box } from "@mui/material";
 import WelcomeSection from "../components/WelcomeSection";
 import DeitiesSection from "../components/DeitiesSection";
+import UpcomingEvents from "../components/UpcomingEvents";
+import EventIcon from "@mui/icons-material/Event";
 import {
   Container,
   Typography,
@@ -18,12 +20,15 @@ export default function Home() {
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
       <WelcomeSection />
+      <UpcomingEvents />
       <DeitiesSection />
+      
+      
 
       {/* Featured Content */}
-      <Box sx={{ py: 8, px: { xs: 2, md: 4 } }}>
+      <Box sx={{ py: 8, px: { xs: 2, md: 4 }, bgcolor: "background.paper" }}>
         <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
+          {/* <Grid item xs={12} md={4}>
             <Card>
               <CardMedia
                 component="img"
@@ -44,7 +49,9 @@ export default function Home() {
                 </Button>
               </CardContent>
             </Card>
-          </Grid>
+            
+          </Grid> */}
+          
 
           <Grid item xs={12} md={4}>
             <Card>
