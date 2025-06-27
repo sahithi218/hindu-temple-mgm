@@ -48,21 +48,9 @@ export const events = [
     image: "/images/events/jagannath-rath-yatra.jpg",
     flyer_image: "/images/events/jagannath-temple-flyer.jpg",
     category: "Festival",
-    date:"June 27, 2025"
+    date:"June 26, 2025"
   },
-  {
-    id: 3,
-    title: "Bhagawan Jagannath Rath Yatra",
-    date_time: "June 26, 2025 from 5:00 PM",
-    time: "Temple open from 8:00 AM - 8 PM",
-    location: "Temple Complex",
-    description:
-      "This is a holy day throughout the year in which Bhagwan Jagnnath will step out of the temple with his sister Subhadra abd brother Balram. During the Rathyatra, the devotees dance, chant bhajan, pull Charioy with rope and get the oppurtunity to receive the blessings of the Bhagwan Jagnnath through the voyage.",
-    image: "/images/events/jagannath-rath-yatra.jpg",
-    flyer_image: "/images/events/jagannath-temple-flyer.jpg",
-    category: "Festival",
-    date:"June 28, 2025"
-  },
+  
   // {
   //   id: 3,
   //   title: "Ganesh Chaturthi Celebrations",
