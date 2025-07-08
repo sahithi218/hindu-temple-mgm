@@ -148,8 +148,13 @@ export default function DonatePage() {
                 image="/images/donations/step1_enteramount.png"
                 alt="step1"
                 sx={{
-                  height: 240,
                   width: "100%",
+                  height: {
+                    xs: 200,  
+                    sm: 300,
+                    md: 400,
+                    lg: 500,  
+                  },
                   objectFit: "cover",
                   mb: 3,
                 }}
@@ -172,8 +177,13 @@ export default function DonatePage() {
                 image="/images/donations/step2_selectotherandzero.png"
                 alt="step2"
                 sx={{
-                  height: 500,
                   width: "100%",
+                  height: {
+                    xs: 200,  
+                    sm: 300,
+                    md: 400,
+                    lg: 500,  
+                  },
                   objectFit: "cover",
                   mb: 3,
                 }}
@@ -195,9 +205,15 @@ export default function DonatePage() {
                 image="/images/donations/step3_choosepayment.png"
                 alt="step3"
                 sx={{
-                  height: "FitScreen",
                   width: "100%",
+                  height: {
+                    xs: 200,  
+                    sm: 300,
+                    md: 400,
+                    lg: 500,  
+                  },
                   objectFit: "cover",
+                  mb: 3,
                 }}
               />
             </CardContent>

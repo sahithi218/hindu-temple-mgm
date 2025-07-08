@@ -7,6 +7,9 @@ export const metadata = {
   title: "Hindu Temple of Montgomery",
   description:
     "A Sacred Space for Worship, Community, and Cultural Celebration",
+    icons: {
+    icon: "/images/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {

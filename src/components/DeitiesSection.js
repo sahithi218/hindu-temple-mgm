@@ -4,7 +4,6 @@ import { Box, Typography } from "@mui/material";
 import DeityCard from "./DeityCard";
 
 const deities = [
-   
   {
     name: "Lord Hanuman",
     description:
@@ -28,14 +27,14 @@ const deities = [
     description:
       "The remover of obstacles and patron of arts and sciences. Lord Ganesha is worshipped first before beginning any new endeavor.",
     image: "/images/ganesha.jpg",
-  }, 
+  },
   {
     name: "Lord Venkateshwara",
     description:
       "A form of Lord Vishnu, known for his supreme compassion and fulfilling the wishes of his devotees. He is the lord of seven hills.",
     image: "/images/venkateshwara.jpg",
   },
-   {
+  {
     name: "Ram Parivar",
     description:
       "The destroyer of evil and transformer of the universe. He represents meditation, yoga, and spiritual enlightenment.",
@@ -47,12 +46,11 @@ const deities = [
       "The divine embodiment of love and wisdom, known for his teachings in the Bhagavad Gita and his playful nature.",
     image: "/images/RadhaKrishna.jpg",
   },
- 
 ];
 
 const DeitiesSection = () => {
   return (
-    <Box sx={{ py: 8, bgcolor: "background.paper" }}>
+    <Box sx={{ py: 8, bgcolor: "background.default" }}>
       <Box sx={{ px: { xs: 2, md: 4 } }}>
         <Typography
           variant="h2"

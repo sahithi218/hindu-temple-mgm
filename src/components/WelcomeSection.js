@@ -15,7 +15,7 @@ const WelcomeSection = () => {
         overflow: "hidden",
       }}
     >
-      <Container maxWidth="lg">
+      <Container maxWidth={"lg"}>
         <Grid
           container
           spacing={{ xs: 4, md: 6 }}
