@@ -50,6 +50,21 @@ export const events = [
     category: "Festival",
     date:"June 26, 2025"
   },
+
+  {
+    id: 3,
+    title: "Guru Poornima",
+    date_time: "July 10, 2025 from 4:30 PM",
+    time: "Temple open from 9:00 AM - 8:30 PM",
+    location: "Temple Complex",
+    description:
+      "Guru Purnima is a religious festival dedicated to offering respect to all the spiritual and academic gurus. This festival is traditionally observed to honour one's chosen spiritual teachers or leaders. It is observed on the full moon day (Purnima) in the month of Ashadha (June–July) according to the Hindu Calendar.",
+    image: "/images/events/Guru-purnima-pic.jpg",
+    flyer_image: "/images/events/guru-purnima.jpg",
+    category: "Festival",
+    date:"July 10, 2025"
+  },
+  
   
   // {
   //   id: 3,
