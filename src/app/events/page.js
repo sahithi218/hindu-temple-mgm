@@ -64,6 +64,47 @@ export const events = [
     category: "Festival",
     date:"July 10, 2025"
   },
+  {
+    id: 4,
+    title: "Rakshabandhan & Satyanarayan Puja",
+    date_time: "August 8, 2025 from 5:00 PM",
+    time: "Temple open from 9:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "It is celebrated on the full moon day of the Shravana month. Sisters tie a Rakhi (sacred thread) on their brothers' wrists, symbolizing protection and love, and brothers in turn, promise to protect their sisters. Also temple is conducting Satyanarayan puja as part or temple's regular pournami schedule.",
+    image: "/images/events/Rakshabandan-SathyaNarayanPuja.jpeg",
+    flyer_image: "/images/events/Rakshabandan-SathyaNarayanPuja-Flyer.jpeg",
+    category: "Festival",
+    date:"August 8, 2025"
+
+  },
+  {
+    id: 5,
+    title: "Krishnastami and India Indepence day celebrations",
+    date_time: "August 15, 2025 from 4:30 PM",
+    time: "Temple open from 6:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "Celebrating the birth of Lord Krishna. It is observed on the eighth day (Ashtami) of the Krishna Paksha (dark fortnight) in the Hindu month of Bhadrapada. Also temple is celebrating India 79th Independence day.",
+    image: "/images/events/Krishnastami-Independence-day-2025.jpeg",
+    flyer_image: "/images/events/Krishnastami-Independence-day-2025-flyer.jpeg",
+    category: "Festival",
+    date:"August 15, 2025"
+  },
+
+  {
+    id: 6,
+    title: "Shravan Monday",
+    date_time: "August 11, 2025 from 4:30 PM",
+    time: "Temple open from 6:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "Ice Shiva Lingam darshan, Shiva Bhajan, Shiva abhishekam.",
+    image: "/images/events/Shravan-Monday-Aug11.jpeg",
+    flyer_image: "/images/events/Shravan-Monday-Aug11-flyer.jpeg",
+    category: "Festival",
+    date:"August 11, 2025"
+  },
   
   
   // {
