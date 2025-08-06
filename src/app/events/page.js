@@ -105,6 +105,19 @@ export const events = [
     category: "Festival",
     date:"August 11, 2025"
   },
+   {
+    id: 7,
+    title: "Annual Cultural Event",
+    date_time: "October 4th, 2025 from 4:00 PM",
+    time: "4 PM onwards",
+    location: "Gujarathi Samaj Montgomery",
+    description:
+      "This is a cultural event conducted every year during fall time.",
+    image: "/images/events/Annual_Cultural_Event.jpeg",
+    flyer_image: "/images/events/Annual_Cultural_Event_flyer.jpeg",
+    category: "Festival",
+    date:"October 4, 2025"
+  },
   
   
   // {
