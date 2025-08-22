@@ -74,12 +74,16 @@ export default function AnnualEventPage() {
                 sx={{
                   width: "100%",
                   height: {
-                    xs: 500,
+                    xs: "auto",
                     sm: 300,
                     md: 400,
                     lg: 1400,
                   },
-                  objectFit: "cover",
+                  
+                  objectFit: {
+                    xs: "contain", 
+                    sm: "cover",
+                  },
                   mb: 3,
                 }}
               />
@@ -99,12 +103,15 @@ export default function AnnualEventPage() {
                 sx={{
                   width: "100%",
                   height: {
-                    xs: 500,
+                    xs: "auto",
                     sm: 300,
                     md: 400,
                     lg: 1500,
                   },
-                  objectFit: "cover",
+                  objectFit: {
+                    xs: "contain", 
+                    sm: "cover",
+                  },
                   mb: 3,
                 }}
               />
@@ -137,12 +144,15 @@ export default function AnnualEventPage() {
                 sx={{
                   width: "100%",
                   height: {
-                    xs: 200,
+                    xs: "auto",
                     sm: 300,
                     md: 400,
                     lg: 500,
                   },
-                  objectFit: "cover",
+                  objectFit: {
+                    xs: "contain", 
+                    sm: "cover",
+                  },
                   mb: 3,
                 }}
               />
