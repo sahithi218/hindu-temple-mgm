@@ -29,6 +29,7 @@ const navItems = [
   { title: "Membership", path: "/membership" },
   { title: "About", path: "/about" },
   { title: "Contact", path: "/contact" },
+  { title: "Annual Cultural Event", path: "/annualEvent" },
 ];
 
 const Navbar = () => {
