@@ -105,8 +105,62 @@ export const events = [
     category: "Festival",
     date:"August 11, 2025"
   },
-   {
+   
+  {
     id: 7,
+    title: "Ganesh Chaturthi",
+    date_time: "August 26, 2025 from 11 AM",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "The festival celebrates Ganesha as the God of New Beginnings, the Remover of Obstacles and the God of Wisdom and Intelligence.",
+    image: "images/events/Ganesh Chaturthi.jpg",
+    flyer_image: "images/events/Ganesh Chaturthi Flyer.jpeg",
+    category: "Festival",
+    date:"September 6, 2025"
+  },
+
+  {
+    id: 8,
+    title: "Ganesh Havan",
+    date_time: "September 1st, 2025 from 11 AM",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "108 ladoos are offered to God during this havan.",
+    image: "images/events/Havan.jpg",
+    flyer_image: "images/events/Ganesh Havan Flyer.jpeg",
+    category: "Festival",
+    date:"September 6, 2025"
+  },
+   {
+    id: 9,
+    title: "Ganesh Chaturthi Food Sponsors",
+    date_time: "Aug 26th to September 6th 2025",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "List of the food sponsors for Ganesh Chathurthi Utsav",
+    image: "images/events/Ganesh food sponsors.png",
+    flyer_image: "images/events/Ganesh Sponsors Flyer.jpeg",
+    category: "Festival",
+    date:"September 6, 2025"
+  },
+  {
+    id: 10,
+    title: "Ganesh Visarjan",
+    date_time: "September 6th 2025",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "Ganesh Visarjan is a ritual of immersing Ganesha's idol in a river, sea or any waterbody and is done to mark his journey back to his heavenly home in Mount Kailash where he will join his parents Lord Shiva and Parvati",
+    image: "images/events/Ganesh Visarjan.jpeg",
+    flyer_image: "images/events/Ganesh Visarjan Flyer 1.jpeg",
+    category: "Festival",
+    date:"September 6, 2025"
+  },
+  {
+    id: 11,
     title: "Annual Cultural Event",
     date_time: "October 4th, 2025 from 4:00 PM",
     time: "4 PM onwards",
@@ -118,8 +172,6 @@ export const events = [
     category: "Festival",
     date:"October 4, 2025"
   },
-  
-  
   // {
   //   id: 3,
   //   title: "Ganesh Chaturthi Celebrations",
