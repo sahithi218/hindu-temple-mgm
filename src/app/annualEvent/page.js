@@ -70,7 +70,7 @@ export default function AnnualEventPage() {
             </Link>
           </Box>
 
-          <Typography variant="body2" sx={{ mb: 2, color: "text.disabled" }}>
+          {/* <Typography variant="body2" sx={{ mb: 2, color: "text.disabled" }}>
             OR
           </Typography>
 
@@ -86,7 +86,7 @@ export default function AnnualEventPage() {
             >
               ↓ Jump to Nomination ↓
             </Link>
-          </Box>
+          </Box> */}
         </Divider>
 
         <Grid item xs={12} md={7}>
@@ -194,7 +194,7 @@ export default function AnnualEventPage() {
           </Card>
         </Grid>
         {/* Contact Form */}
-        <Grid item xs={12} md={7} id="nomination">
+        {/* <Grid item xs={12} md={7} id="nomination">
           <Card>
             <CardContent sx={{ p: 4 }}>
               <Typography variant="h6" sx={{ mb: 3, fontWeight: 600 }}>
@@ -212,7 +212,7 @@ export default function AnnualEventPage() {
               </Box>
             </CardContent>
           </Card>
-        </Grid>
+        </Grid> */}
       </Container>
     </Box>
   );
