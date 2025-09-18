@@ -148,19 +148,64 @@ export const events = [
   },
   {
     id: 10,
-    title: "Ganesh Visarjan",
-    date_time: "September 6th 2025",
+    title: "Devi Navaratri Celebration",
+    date_time: "September 22nd to October 1st 2025",
     time: "Temple open from 8:00 AM - 8 PM",
     location: "Temple Complex",
     description:
-      "Ganesh Visarjan is a ritual of immersing Ganesha's idol in a river, sea or any waterbody and is done to mark his journey back to his heavenly home in Mount Kailash where he will join his parents Lord Shiva and Parvati",
-    image: "images/events/Ganesh Visarjan.jpeg",
-    flyer_image: "images/events/Ganesh Visarjan Flyer 1.jpeg",
+      "Devi Navratri is a major annual Hindu festival, celebrated for nine nights and ten days, honoring the supreme goddess Durga and her divine feminine power, or Shakti. The festival marks the victory of good over evil, often depicted as Goddess Durga's triumph over demons like Mahishasura.",
+    image: "/images/events/Devi Navaratri.jpg",
+    flyer_image: "/images/events/Navaratri flyer.jpeg",
     category: "Festival",
-    date:"September 6, 2025"
+    date:"October 2, 2025"
+
   },
+  ,
   {
     id: 11,
+    title: "Navaratri Every Day Details Celebration",
+    date_time: "September 22nd to October 1st 2025",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "Devi Navratri is a major annual Hindu festival, celebrated for nine nights and ten days, honoring the supreme goddess Durga and her divine feminine power, or Shakti. The festival marks the victory of good over evil, often depicted as Goddess Durga's triumph over demons like Mahishasura.",
+    image: "/images/events/Devi Navaratri-Everyday.jpg",
+    flyer_image: "/images/events/Navaratri_EveryDay flyer.jpeg",
+    category: "Festival",
+    date:"October 2, 2025"
+
+  },  
+  {
+    id: 12,
+    title: "Navarati Food Sponsors",
+    date_time: "September 22nd to October 1st 2025",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "List of the food sponsors for Devi Navaratri Utsav",
+    image: "images/events/Navratri-Thali.jpg",
+    flyer_image: "images/events/Navaratri_Food_Sponsors flyer.jpeg",
+    category: "Festival",
+    date:"October 2, 2025"
+  },
+   
+  {
+    id: 13,
+    title: "Bathukamma",
+    date_time: "September 27, 2025 from 5 PM",
+    time: "Temple open from 8:00 AM - 8 PM",
+    location: "Temple Complex",
+    description:
+      "Bathukamma is a nine-day Telangana state festival celebrating nature, womanhood, and Goddess Gauri with flower arrangements called Bathukammas, traditional songs, and dances. It begins on Mahalaya Amavasya and ends on Durgashtami.",
+    image: "images/events/Bathukamma.jpg",
+    flyer_image: "images/events/HTM Bathukamma 2025 Flyer.png",
+    category: "Festival",
+    date:"September 28, 2025"
+  },
+
+  
+  {
+    id: 14,
     title: "Annual Cultural Event",
     date_time: "October 4th, 2025 from 4:00 PM",
     time: "4 PM onwards",
