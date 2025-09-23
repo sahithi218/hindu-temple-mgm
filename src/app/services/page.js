@@ -620,13 +620,15 @@ export default function ServicesPage() {
                     >
                       Price At Temple
                     </Typography>
-                    <Typography variant="body2">
+                    {/* <Typography variant="body2">
                       Member Price: <strong>{event.memberprice}</strong>
                     </Typography>
                     <Typography variant="body2" sx={{ mb: 2 }}>
                       Non Member Price: <strong>{event.nonmemberprice}</strong>
+                    </Typography> */}
+                    <Typography variant="body2" sx={{ mb: 2 }}>
+                      Price: <strong>{event.nonmemberprice}</strong>
                     </Typography>
-
                     <Typography
                       variant="h6"
                       sx={{ color: "text.secondary", mb: 2 }}
