@@ -45,6 +45,7 @@ const donationOptions = [
 ];
 
 export default function DonatePage() {
+  const [showDetails, setShowDetails] = useState(false);
   return (
     <Box>
       <PageHero title="Support Our Temple" icon={MonetizationOnIcon} />
@@ -87,7 +88,8 @@ export default function DonatePage() {
             We’re proud to partner with <strong>Zeffy.com</strong> to collect
             donations. As a platform designed specifically for nonprofits, Zeffy
             ensures that 100% of your contributions go directly to our
-            organization—with zero transaction fees.
+            organization—with zero transaction fees. Also you have option to
+            donate through <strong>Zelle</strong>
           </Typography>
 
           <Box
@@ -120,10 +122,70 @@ export default function DonatePage() {
             >
               Donate
             </Button>
+
+            {/* <Button
+              variant="contained"
+              size="large"
+              sx={{
+                bgcolor: "#E85D04",
+                color: "#fff",
+                "&:hover": {
+                  bgcolor: "#D85004",
+                },
+              }}
+              onClick={() => setShowDetails(true)}
+            >
+              Zelle
+            </Button> */}
+
+            {showDetails && (
+              <Box mt={2}>
+                <Typography variant="h6">Support Our Temple</Typography>
+                <Typography variant="body1">
+                  You can donate via Zelle using the link below. Your support
+                  helps us maintain temple activities and services.
+                </Typography>
+                <img
+                  src="images/donations/HTM Zelle.png"
+                  alt="Zelle Donation Details"
+                  style={{ maxWidth: "100%", marginTop: "1rem" }}
+                />
+              </Box>
+            )}
           </Box>
         </Box>
 
         <Grid item xs={12} md={7}>
+          <Card sx={{ mb: 4, boxShadow: 2 }}>
+            <CardContent>
+              <Typography variant="h7" sx={{ mb: 3 }}>
+                <strong>Zelle</strong>
+              </Typography>
+              <Typography
+                sx={{
+                  color: "text.primary",
+                  mx: "auto",
+                }}
+              >
+                Login to your bank and go to transfer or zelle page and scan
+                this QR for adding the receiver details or you can add our email
+                "hindutemple.montgomery@gmail.com" as receiver.
+              </Typography>
+              <CardMedia
+                component="img"
+                image="images/donations/HTM Zelle.png"
+                alt="Zelle QR"
+                sx={{
+                  maxWidth: 400, // Adjust this value as needed
+                  width: "100%",
+                  height: "auto",
+                  objectFit: "contain",
+                  mb: 3,
+                  mx: "auto", // Center the image horizontally
+                }}
+              />
+            </CardContent>
+          </Card>
           <Card sx={{ mb: 4, boxShadow: 2 }}>
             <CardContent>
               <Typography variant="h6" sx={{ mb: 3 }}>
@@ -150,10 +212,10 @@ export default function DonatePage() {
                 sx={{
                   width: "100%",
                   height: {
-                    xs: 200,  
+                    xs: 200,
                     sm: 300,
                     md: 400,
-                    lg: 500,  
+                    lg: 500,
                   },
                   objectFit: "cover",
                   mb: 3,
@@ -179,10 +241,10 @@ export default function DonatePage() {
                 sx={{
                   width: "100%",
                   height: {
-                    xs: 200,  
+                    xs: 200,
                     sm: 300,
                     md: 400,
-                    lg: 500,  
+                    lg: 500,
                   },
                   objectFit: "cover",
                   mb: 3,
@@ -207,10 +269,10 @@ export default function DonatePage() {
                 sx={{
                   width: "100%",
                   height: {
-                    xs: 200,  
+                    xs: 200,
                     sm: 300,
                     md: 400,
-                    lg: 500,  
+                    lg: 500,
                   },
                   objectFit: "cover",
                   mb: 3,
@@ -222,4 +284,20 @@ export default function DonatePage() {
       </Container>
     </Box>
   );
+  {
+    showDetails && (
+      <Box mt={2}>
+        <Typography variant="h6">Support Our Temple</Typography>
+        <Typography variant="body1">
+          You can donate via Zelle using the link below. Your support helps us
+          maintain temple activities and services.
+        </Typography>
+        <img
+          src="/images/zelle-donation-info.png"
+          alt="Zelle Donation Details"
+          style={{ maxWidth: "100%", marginTop: "1rem" }}
+        />
+      </Box>
+    );
+  }
 }
