@@ -79,10 +79,7 @@ export default function AnnualEventDetails() {
             </CardContent>
           </Card>
           <Card sx={{ mb: 4, boxShadow: 2 }}>
-            <CardContent>
-              <Typography variant="h6" sx={{ mb: 3, textAlign: "center" }}>
-                Every Day Details
-              </Typography>
+            <CardContent>             
               <CardMedia
                 component="img"
                 image="/images/events/Diwali 2025 - October 4_2.png"
@@ -105,10 +102,7 @@ export default function AnnualEventDetails() {
             </CardContent>
           </Card>
           <Card sx={{ mb: 4, boxShadow: 2 }}>
-            <CardContent>
-              <Typography variant="h6" sx={{ mb: 3, textAlign: "center" }}>
-                Food Sponsors
-              </Typography>
+            <CardContent>              
               <CardMedia
                 component="img"
                 image="/images/events/Diwali 2025 - October 4_3.png"
@@ -130,32 +124,7 @@ export default function AnnualEventDetails() {
               />
             </CardContent>
           </Card>
-          <Card sx={{ mb: 4, boxShadow: 2 }}>
-            <CardContent>
-              <Typography variant="h6" sx={{ mb: 3, textAlign: "center" }}>
-                Bathukamma
-              </Typography>
-              <CardMedia
-                component="img"
-                image="/images/events/Meetha Paan.png"
-                alt="Paan"
-                sx={{
-                  width: "100%",
-                  height: {
-                    xs: "auto",
-                    sm: 300,
-                    md: 400,
-                    lg: 1500,
-                  },
-                  objectFit: {
-                    xs: "contain",
-                    sm: "cover",
-                  },
-                  mb: 3,
-                }}
-              />
-            </CardContent>
-          </Card>
+          
         </Grid>
 
 
