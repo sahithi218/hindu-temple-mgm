@@ -137,8 +137,8 @@ export default function AnnualEventDetails() {
               </Typography>
               <CardMedia
                 component="img"
-                image="/images/events/HTM Bathukamma 2025 Flyer.png"
-                alt="Navaratri_Food Sponsors"
+                image="/images/events/Meetha Paan.png"
+                alt="Paan"
                 sx={{
                   width: "100%",
                   height: {
