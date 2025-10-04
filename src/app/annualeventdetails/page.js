@@ -126,7 +126,29 @@ export default function AnnualEventDetails() {
           </Card>
           
         </Grid>
-
+        <Card sx={{ mb: 4, boxShadow: 2 }}>
+                    <CardContent>              
+                      <CardMedia
+                        component="img"
+                        image="/images/events/Meetha Paan - Copy.png"
+                        alt="Paan"
+                        sx={{
+                          width: "100%",
+                          height: {
+                            xs: "auto",
+                            sm: 300,
+                            md: 400,
+                            lg: 1500,
+                          },
+                          objectFit: {
+                            xs: "contain",
+                            sm: "cover",
+                          },
+                          mb: 3,
+                        }}
+                      />
+                    </CardContent>
+                  </Card>
 
         {/* Contact Form */}
         {/* <Grid item xs={12} md={7} id="nomination">
